@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <title>home</title> -->
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              charcoal: "#1c1c1c",
+              crimson: "#e10600",
+              ivory: "#f5f5f5",
+              gold: "#ffd700",
+            },
+            fontFamily: {
+              jost: ["Jost", "sans-serif"],
+              bebas: ["Bebas Neue", "cursive"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-black text-ivory">
+    <!-- ================ nav ================ -->
+    <nav class="flex items-center justify-evenly h-20">
+      <a href="" class="w-40">
+        <img src="assets/images/nav-logo.png" alt="" />
+      </a>
+      <ul class="capitalize flex gap-20">
+        <li class="hover:text-crimson transition-all duration-500">
+          <a href="">home</a>
+        </li>
+        <li class="hover:text-crimson transition-all duration-500">
+          <a href="">anime list</a>
+        </li>
+        <li class="hover:text-crimson transition-all duration-500">
+          <a href="">genre</a>
+        </li>
+        <li class="hover:text-crimson transition-all duration-500">
+          <a href="">about us</a>
+        </li>
+      </ul>
+      <div class="flex items-center gap-10">
+        <div class="flex pl-3 items-center gap-2 bg-white/20 w-60 h-7 rounded">
+          <img
+            class="invert w-2.5 opacity-50"
+            src="assets/icons/search.png"
+            alt=""
+          />
+          <input
+            class="bg-transparent placeholder:text-white placeholder:opacity-50 text-[13px]"
+            type="text"
+            name=""
+            id=""
+            placeholder="Search"
+          />
+        </div>
+        <button class="p-1">
+          <img class="invert w-4" src="assets/icons/user.png" alt="" />
+        </button>
+      </div>
+    </nav>
+
+    <!-- ================ header ================ -->
+    <header class="">
+      <div class="w-[90%] h-[80vh] relative mx-auto">
+        <button
+          class="border-4 border-black bg-charcoal w-14 h-14 absolute top-1/2 -left-7 -translate-y-1/2 rotate-45 z-[2]"
+        >
+          <i class="fa-solid fa-angle-left -rotate-45"></i>
+        </button>
+
+        <div class="h-full w-full flex overflow-hidden">
+          <img
+            src="assets/images/naruto-cover.jpg"
+            alt=""
+            class="min-w-full h-full object-cover"
+          />
+
+          <img
+            src="assets/images/naruto-cover.jpg"
+            alt=""
+            class="min-w-full h-full object-cover"
+          />
+          <img
+            src="assets/images/naruto-cover.jpg"
+            alt=""
+            class="min-w-full h-full object-cover"
+          />
+        </div>
+        <div
+          class="bg-gradient-to-t from-black/90 to-transparent w-full h-full absolute top-0 left-0 pointer-events-none"
+        ></div>
+
+        <div class="absolute bottom-0 left-0 m-14 grid gap-4">
+          <p
+            class="bg-ivory text-crimson text-[12px] w-16 h-6 flex justify-center items-center"
+          >
+            Type
+          </p>
+          <h1 class="font-bebas text-7xl">anime title</h1>
+          <p class="w-2/3 opacity-80 font-[300] text-[15px]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, sed
+            laborum odio ducimus atque esse rem labore sunt, est nihil amet,
+            magni soluta et quae rerum in repellat. Nulla, aut.
+          </p>
+          <button
+            class="bg-crimson w-40 h-10 rounded-full flex items-center justify-evenly border border-transparent hover:bg-transparent hover:border-crimson hover:text-crimson transition-all duration-450 hover:scale-95"
+          >
+            <i class="fa-solid fa-play text-sm"></i>
+            <p class="text-sm capitalize">watch now</p>
+          </button>
+        </div>
+
+        <button
+          class="border-4 border-black bg-charcoal w-14 h-14 absolute top-1/2 -right-7 -translate-y-1/2 rotate-45 z-[2]"
+        >
+          <i class="fa-solid fa-angle-right -rotate-45"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Trending Section -->
+    <section class="m-20">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-5">
+          <div class="bg-crimson w-2 h-11"></div>
+          <h1 class="capitalize text-3xl">trending animes</h1>
+        </div>
+        <div
+          class="flex items-center gap-2 opacity-60 hover:opacity-80 transition cursor-pointer"
+        >
+          <p class="text-[13px] capitalize">view all</p>
+          <img
+            class="invert rotate-180 w-3"
+            src="assets/icons/left-arrow.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="mt-10">
+        <div
+          class="to-transparent w-[200px] h-[280px] relative rounded-md overflow-hidden"
+        >
+          <div
+            class="bg-gradient-to-t from-black/80 via-transparent to-transparent w-full h-full absolute top-0 left-0 z-[2] pointer-events-none"
+          ></div>
+          <img
+            class="w-full h-full object-cover scale-110 hover:scale-100 transition-all"
+            src="assets/images/animes/dragon-ball-super.webp"
+            alt=""
+          />
+          <h1
+            class="absolute bottom-0 left-1/2 -translate-x-1/2 whitespace-nowrap z-[2] capitalize"
+          >
+            dragon ball super
+          </h1>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
