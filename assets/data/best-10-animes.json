@@ -1,0 +1,52 @@
+[
+  {
+    "image": "attack-on-titan",
+    "type": "action",
+    "description": "In a world where humanity is on the brink of extinction due to giant humanoid creatures known as Titans, Eren Yeager and his friends join the Survey Corps to fight back and uncover the truth behind the Titans' origins. Filled with intense action, deep storytelling, and shocking plot twists, Attack on Titan is a must-watch for any anime fan."
+  },
+  {
+    "image": "demon-slayer",
+    "type": "action",
+    "description": "Tanjiro Kamado, a kind-hearted boy, returns home to find his family slaughtered by demons. His sister Nezuko, the sole survivor, is transformed into a demon herself. Determined to find a cure, Tanjiro joins the Demon Slayer Corps, embarking on a journey filled with intense battles, breathtaking animation, and a touching sibling bond."
+  },
+  {
+    "image": "naruto",
+    "type": "adventure",
+    "description": "Naruto Uzumaki, a young ninja with a dream of becoming the Hokage, embarks on a journey of self-discovery and growth. Along the way, he forges powerful friendships, faces formidable enemies, and uncovers the secrets of his past. Packed with thrilling fights and heartfelt moments, Naruto is a classic that shaped modern shonen anime."
+  },
+  {
+    "image": "one-piece",
+    "type": "adventure",
+    "description": "Monkey D. Luffy sets sail on an epic journey to find the legendary One Piece treasure and become the King of the Pirates. Alongside his diverse and lovable crew, Luffy battles dangerous foes, explores vast seas, and uncovers hidden mysteries. With its long-running adventure and rich world-building, One Piece is a true anime masterpiece."
+  },
+  {
+    "image": "jujutsu-kaisen",
+    "type": "supernatural",
+    "description": "Yuji Itadori, a high school student with exceptional physical abilities, swallows a cursed object and becomes the host of the deadly Sukuna. To protect the world, he joins the Jujutsu Sorcerers, fighting against cursed spirits and uncovering the dark secrets of the supernatural realm. With jaw-dropping animation and intense battles, Jujutsu Kaisen is a modern shonen sensation."
+  },
+  {
+    "image": "tokyo-ghoul",
+    "type": "horror",
+    "description": "After a life-changing encounter with a ghoul, college student Kaneki Ken becomes a half-ghoul, struggling to balance his humanity with his new monstrous instincts. Forced to navigate the dangerous underground world of ghouls, he faces brutal conflicts, ethical dilemmas, and psychological torment. Tokyo Ghoul is a dark and gripping anime that delves into identity and survival."
+  },
+  {
+    "image": "hunter-x-hunter",
+    "type": "adventure",
+    "description": "Gon Freecss embarks on a quest to find his missing father, a legendary Hunter. Along the way, he befriends Killua, Leorio, and Kurapika, facing deadly challenges and uncovering hidden dangers in the world of Hunters. Hunter x Hunter is a deeply strategic and emotional adventure with some of the best storytelling in anime history."
+  },
+  {
+    "image": "fullmetal-alchemist-brotherhood",
+    "type": "fantasy",
+    "description": "Brothers Edward and Alphonse Elric commit the ultimate alchemic taboo, losing parts of their bodies in an attempt to bring their mother back to life. In search of the Philosopher's Stone to restore their bodies, they uncover deep conspiracies, powerful enemies, and the true cost of alchemy. This anime is a beautifully crafted mix of action, drama, and philosophy."
+  },
+  {
+    "image": "death-note",
+    "type": "psychological",
+    "description": "High school genius Light Yagami discovers a mysterious notebook that grants him the power to kill anyone by writing their name. As he takes on the alias 'Kira' and attempts to create a utopia, he is challenged by the brilliant detective L, leading to an intense battle of wits. Death Note is a gripping psychological thriller that keeps viewers on the edge of their seats."
+  },
+  {
+    "image": "my-hero-academia",
+    "type": "superhero",
+    "description": "In a world where people are born with superpowers known as Quirks, Izuku Midoriya is one of the few without one. Despite this, he dreams of becoming a hero and is granted the legendary power of One For All by the greatest hero, All Might. My Hero Academia delivers exhilarating battles, inspiring character development, and a fresh take on the superhero genre."
+  }
+]

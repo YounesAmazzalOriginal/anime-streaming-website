@@ -21,6 +21,9 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Javascript -->
+    <script src="assets/scripts/main.js" defer></script>
+
     <script>
       tailwind.config = {
         theme: {
@@ -32,6 +35,7 @@
               gold: "#ffd700",
             },
             fontFamily: {
+              montserrat: ["Montserrat", "sans-serif"],
               jost: ["Jost", "sans-serif"],
               bebas: ["Bebas Neue", "cursive"],
             },
@@ -68,7 +72,7 @@
             alt=""
           />
           <input
-            class="bg-transparent placeholder:text-white placeholder:opacity-50 text-[13px]"
+            class="bg-transparent placeholder:text-white placeholder:opacity-50 text-[13px] outline-0"
             type="text"
             name=""
             id=""
@@ -141,13 +145,14 @@
     </header>
 
     <!-- Trending Section -->
-    <section class="m-20">
-      <div class="flex items-center justify-between">
+    <section class="w-[90%] mx-auto">
+      <div class="flex items-center justify-between mt-20">
         <div class="flex items-center gap-5">
           <div class="bg-crimson w-2 h-11"></div>
-          <h1 class="capitalize text-3xl">trending animes</h1>
+          <h1 class="capitalize text-3xl font-bold">trending animes</h1>
         </div>
-        <div
+        <button
+          onclick="viewwAll(this)"
           class="flex items-center gap-2 opacity-60 hover:opacity-80 transition cursor-pointer"
         >
           <p class="text-[13px] capitalize">view all</p>
@@ -156,24 +161,76 @@
             src="assets/icons/left-arrow.png"
             alt=""
           />
-        </div>
+        </button>
       </div>
-      <div class="mt-10">
+      <div
+        id="best-animes-container"
+        class="relative mt-10 flex gap-2 overflow-x-scroll pb-6"
+        style="scrollbar-width: none; -ms-overflow-style: none"
+      >
+        <!-- <div
+          class="cursor-pointer min-w-[200px] min-h-[280px] max-w-[200px] max-h-[280px] transition-all duration-300 relative rounded-md overflow-hidden group"
+        >
+          <h1
+            class="absolute top-0 left-0 mx-3 my-2 z-[4] font-montserrat font-bold text-4xl after:content-[''] after:w-20 after:h-20 after:bg-charcoal/70 after:rounded-full after:absolute after:blur-xl after:top-1/2 after:left-1/2 after:z-[-1] after:-translate-y-1/2 after:-translate-x-1/2"
+          >
+            1
+          </h1>
+          <div
+            class="bg-gradient-to-t from-black/80 via-transparent to-transparent w-full h-full absolute top-0 left-0 z-[2] pointer-events-none"
+          ></div>
+          <img
+            class="w-full h-full object-cover scale-110 hover:scale-100 duration-300 transition-all group-hover:brightness-50"
+            src="assets/images/animes/dragon-ball-super.webp"
+            alt=""
+          />
+          <h1
+            class="absolute bottom-0 left-1/2 -translate-x-1/2 whitespace-nowrap z-[2] capitalize mb-3 font-[500]"
+          >
+            dragon ball super
+          </h1>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Latest Releases -->
+    <section class="w-[90%] mx-auto">
+      <div class="flex items-center justify-between mt-20">
+        <div class="flex items-center gap-5">
+          <div class="bg-crimson w-2 h-11"></div>
+          <h1 class="capitalize text-3xl font-bold">latest releases</h1>
+        </div>
+        <button
+          onclick="viewwAll(this)"
+          class="flex items-center gap-2 opacity-60 hover:opacity-80 transition cursor-pointer"
+        >
+          <p class="text-[13px] capitalize">view all</p>
+          <img
+            class="invert rotate-180 w-3"
+            src="assets/icons/left-arrow.png"
+            alt=""
+          />
+        </button>
+      </div>
+      <div
+        class="relative mt-10 flex gap-2 overflow-x-scroll pb-6"
+        style="scrollbar-width: none; -ms-overflow-style: none"
+      >
         <div
-          class="to-transparent w-[200px] h-[280px] relative rounded-md overflow-hidden"
+          class="cursor-pointer min-w-[200px] min-h-[280px] max-w-[200px] max-h-[280px] transition-all duration-300 relative rounded-md overflow-hidden group"
         >
           <div
             class="bg-gradient-to-t from-black/80 via-transparent to-transparent w-full h-full absolute top-0 left-0 z-[2] pointer-events-none"
           ></div>
           <img
-            class="w-full h-full object-cover scale-110 hover:scale-100 transition-all"
-            src="assets/images/animes/dragon-ball-super.webp"
+            class="w-full h-full object-cover scale-110 hover:scale-100 duration-300 transition-all group-hover:brightness-50"
+            src="assets/images/animes/hunter-x-hunter.jpeg"
             alt=""
           />
           <h1
-            class="absolute bottom-0 left-1/2 -translate-x-1/2 whitespace-nowrap z-[2] capitalize"
+            class="absolute bottom-0 left-1/2 -translate-x-1/2 whitespace-nowrap z-[2] capitalize mb-3 font-[500]"
           >
-            dragon ball super
+            hunter x hunter
           </h1>
         </div>
       </div>
