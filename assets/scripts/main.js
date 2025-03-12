@@ -22,7 +22,7 @@ fetch("/assets/data/best-10-animes.json")
         <img
           class="w-full h-full object-cover scale-110 hover:scale-100 duration-300 transition-all group-hover:brightness-50"
           src="assets/images/animes/${data10[i].image}.jpg" 
-          alt="${title}"  // ✅ Now includes both title & image src
+          alt="${title}"  
         />
         <h1
           class="absolute bottom-0 left-1/2 -translate-x-1/2 whitespace-nowrap z-[2] capitalize mb-3 font-[500]"
