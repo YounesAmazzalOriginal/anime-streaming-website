@@ -1,254 +1,533 @@
 [
   {
-    "title": "naruto",
-    "image": "naruto",
-    "release_date": "2002-10-03",
+    "title": "akira",
+    "image": "akira.jpg",
+    "release_date": "1988",
     "status": "Completed",
-    "type": "Action, Adventure, Martial Arts",
-    "description": "A young ninja, Naruto Uzumaki, strives to become the strongest Hokage while dealing with his dark past.",
-    "notes": "8.3"
-  },
-  {
-    "title": "one-piece",
-    "image": "one-piece",
-    "release_date": "1999-10-20",
-    "status": "Ongoing",
-    "type": "Action, Adventure, Fantasy",
-    "description": "Monkey D. Luffy sets sail with his pirate crew to find the legendary One Piece treasure.",
-    "notes": "9.0"
-  },
-  {
-    "title": "attack-on-titan",
-    "image": "attack-on-titan",
-    "release_date": "2013-04-07",
-    "status": "Completed",
-    "type": "Action, Drama, Fantasy",
-    "description": "Humanity fights for survival against giant humanoid creatures known as Titans.",
-    "notes": "9.1"
-  },
-  {
-    "title": "dragon-ball-z",
-    "image": "dragon-ball-z",
-    "release_date": "1989-04-26",
-    "status": "Completed",
-    "type": "Action, Adventure, Martial Arts",
-    "description": "Goku and his friends battle powerful enemies to protect Earth and the universe.",
-    "notes": "8.7"
-  },
-  {
-    "title": "my-hero-academia",
-    "image": "my-hero-academia",
-    "release_date": "2016-04-03",
-    "status": "Ongoing",
-    "type": "Action, Superhero, School",
-    "description": "A boy born without superpowers aims to become the greatest hero in a world where almost everyone has abilities.",
+    "type": "Action, Sci-Fi",
+    "description": "In a dystopian future, biker gang member Kaneda embarks on a journey to save his friend Tetsuo from a government experiment gone wrong, uncovering dark secrets about psychic powers and military conspiracies.",
     "notes": "8.4"
   },
   {
-    "title": "death-note",
-    "image": "death-note",
-    "release_date": "2006-10-04",
+    "title": "angel-beats",
+    "image": "angel-beats.jpg",
+    "release_date": "2010",
     "status": "Completed",
-    "type": "Psychological, Thriller, Supernatural",
-    "description": "A high school student gains a notebook that lets him kill anyone by writing their name in it.",
-    "notes": "9.0"
-  },
-  {
-    "title": "fullmetal-alchemist-brotherhood",
-    "image": "fullmetal-alchemist-brotherhood",
-    "release_date": "2009-04-05",
-    "status": "Completed",
-    "type": "Action, Adventure, Fantasy",
-    "description": "Two brothers search for the Philosopher's Stone after an alchemy experiment goes wrong.",
-    "notes": "9.1"
-  },
-  {
-    "title": "naruto-shippuden",
-    "image": "naruto-shippuden",
-    "release_date": "2007-02-15",
-    "status": "Completed",
-    "type": "Action",
-    "description": "Naruto: Shippuden continues the journey of Naruto Uzumaki, a young ninja with the dream of becoming the Hokage, the strongest ninja in his village. After training for two and a half years with Jiraiya, Naruto returns to the Hidden Leaf Village to reunite with his friends and continue his quest to bring back his lost comrade, Sasuke Uchiha. However, dark forces are rising as the criminal organization Akatsuki begins to make their move, seeking to capture the tailed beasts, including Naruto's Nine-Tails. The series explores themes of friendship, perseverance, and the struggles of war as Naruto faces powerful enemies and learns the truth about his past.",
-    "notes": "8.7"
-  },
-  {
-    "title": "naruto",
-    "image": "naruto",
-    "release_date": "2002-10-03",
-    "status": "Completed",
-    "type": "Action, Adventure, Martial Arts",
-    "description": "Naruto Uzumaki, a young ninja, dreams of becoming the Hokage, the strongest ninja and leader of his village. However, he is shunned by the villagers because he carries the Nine-Tails Fox, a powerful beast that attacked the Hidden Leaf Village years ago. Determined to prove himself, Naruto embarks on a journey to gain strength, form deep friendships, and confront dark organizations like the Akatsuki. As he learns the true meaning of being a ninja, he must face personal loss, fierce battles, and his destiny as the child of prophecy.",
-    "notes": "8.3"
-  },
-  {
-    "title": "one-piece",
-    "image": "one-piece",
-    "release_date": "1999-10-20",
-    "status": "Ongoing",
-    "type": "Action, Adventure, Fantasy",
-    "description": "Monkey D. Luffy sets out on an epic journey to become the Pirate King by finding the legendary treasure, the One Piece. With his rubber-like abilities gained from the Gum-Gum Fruit, Luffy gathers a diverse crew known as the Straw Hat Pirates. Together, they explore dangerous seas, battle powerful foes, and uncover secrets about the world’s corrupt government, mysterious Devil Fruits, and the lost history of the Void Century. Their adventures lead them to legendary islands, fierce rivalries, and the pursuit of their dreams in the Grand Line.",
-    "notes": "9.0"
-  },
-  {
-    "title": "attack-on-titan",
-    "image": "attack-on-titan",
-    "release_date": "2013-04-07",
-    "status": "Completed",
-    "type": "Action, Drama, Fantasy",
-    "description": "In a world where humanity is on the brink of extinction due to monstrous humanoid creatures known as Titans, Eren Yeager, his adoptive sister Mikasa, and his best friend Armin join the Survey Corps to fight back. As they uncover the shocking truth behind the Titans and their own history, they realize that their greatest enemies might not be the Titans outside the walls, but the secrets hidden within them. The story takes intense turns involving betrayal, war, and the fight for true freedom.",
-    "notes": "9.1"
-  },
-  {
-    "title": "dragon-ball-z",
-    "image": "dragon-ball-z",
-    "release_date": "1989-04-26",
-    "status": "Completed",
-    "type": "Action, Adventure, Martial Arts",
-    "description": "Goku, a Saiyan warrior raised on Earth, discovers his alien origins and faces powerful enemies who threaten his home. Alongside his friends and family, he trains to protect the universe from devastating threats like Frieza, Cell, and Majin Buu. Through intense battles, Super Saiyan transformations, and high-stakes tournaments, Goku and his allies push their limits to defend the universe and seek ever-greater strength.",
-    "notes": "8.7"
-  },
-  {
-    "title": "my-hero-academia",
-    "image": "my-hero-academia",
-    "release_date": "2016-04-03",
-    "status": "Ongoing",
-    "type": "Action, Superhero, School",
-    "description": "In a world where superpowers, known as 'Quirks,' are common, Izuku Midoriya is born powerless. Despite this, he dreams of becoming the greatest hero. After an encounter with his idol, All Might, he inherits the powerful Quirk 'One For All' and joins U.A. High School, a prestigious institution for young heroes. As he trains to master his abilities, he faces powerful villains, dark conspiracies, and personal struggles while striving to become the symbol of peace.",
-    "notes": "8.4"
-  },
-  {
-    "title": "death-note",
-    "image": "death-note",
-    "release_date": "2006-10-04",
-    "status": "Completed",
-    "type": "Psychological, Thriller, Supernatural",
-    "description": "Light Yagami, a genius high school student, discovers a mysterious notebook called the Death Note, which allows him to kill anyone by writing their name in it. Determined to rid the world of criminals, he assumes the identity of 'Kira' and becomes a vigilante. However, his actions attract the attention of the world-renowned detective L, leading to a high-stakes battle of wits and morality. As Light’s ambitions grow, he finds himself entangled in a deadly game where even the smallest mistake could cost him everything.",
-    "notes": "9.0"
-  },
-  {
-    "title": "fullmetal-alchemist-brotherhood",
-    "image": "fullmetal-alchemist-brotherhood",
-    "release_date": "2009-04-05",
-    "status": "Completed",
-    "type": "Action, Adventure, Fantasy",
-    "description": "Brothers Edward and Alphonse Elric use alchemy to try and resurrect their deceased mother, but the forbidden experiment costs Edward his arm and leg, while Alphonse loses his entire body. Determined to restore what they lost, they set out on a journey to find the Philosopher's Stone. Along the way, they uncover dark secrets about their country's government, the true nature of alchemy, and the terrifying truth behind human transmutation. Their quest becomes a fight not only to regain their bodies but also to protect the people they love.",
-    "notes": "9.1"
-  },
-  {
-    "title": "naruto-shippuden",
-    "image": "naruto-shippuden",
-    "release_date": "2007-02-15",
-    "status": "Completed",
-    "type": "Action, Adventure, Martial Arts",
-    "description": "Two years after leaving the Hidden Leaf Village, Naruto Uzumaki returns stronger than ever. With the looming threat of the Akatsuki, an organization hunting Jinchuriki like him, Naruto and his friends must grow in power and face dangerous enemies. As he seeks to rescue his best friend Sasuke and uncover the truth about his past, Naruto battles legendary ninjas, discovers the origins of the shinobi world, and prepares for his ultimate destiny as the Child of Prophecy.",
-    "notes": "8.6"
-  },
-  {
-    "title": "bleach",
-    "image": "bleach",
-    "release_date": "2004-10-05",
-    "status": "Completed",
-    "type": "Action, Supernatural, Fantasy",
-    "description": "Ichigo Kurosaki gains the abilities of a Soul Reaper after meeting Rukia Kuchiki. With his new powers, he must protect humans from evil spirits known as Hollows and maintain balance between the human world and the afterlife. However, as Ichigo delves deeper into the Soul Society, he uncovers hidden conspiracies, powerful enemies, and the true nature of his own spiritual powers.",
+    "type": "Action, Comedy, Drama, Supernatural",
+    "description": "In the afterlife, a group of students fights against a mysterious girl named Angel to escape their fate, only to discover the true meaning of their existence.",
     "notes": "8.2"
   },
   {
-    "title": "sword-art-online",
-    "image": "sword-art-online",
-    "release_date": "2012-07-08",
+    "title": "attack-on-titan-season-2",
+    "image": "attack-on-titan-season-2.jpg",
+    "release_date": "2017",
     "status": "Completed",
-    "type": "Action, Adventure, Fantasy",
-    "description": "In the year 2022, thousands of players become trapped in the virtual reality MMORPG, Sword Art Online, where dying in the game means death in real life. Kirito, a skilled player, must navigate through deadly battles, form alliances, and clear 100 floors of Aincrad to escape the game. As he encounters powerful foes and emotional struggles, Kirito discovers the true meaning of strength, love, and survival.",
-    "notes": "7.9"
-  },
-  {
-    "title": "tokyo-ghoul",
-    "image": "tokyo-ghoul",
-    "release_date": "2014-07-04",
-    "status": "Completed",
-    "type": "Action, Supernatural, Horror",
-    "description": "Ken Kaneki, a shy college student, barely survives a deadly encounter with a flesh-eating creature known as a Ghoul. After an emergency transplant, he discovers that he has become a half-Ghoul himself. Struggling with his new existence, Kaneki is taken in by the café 'Anteiku,' where he learns about Ghoul society, its factions, and the deep conflicts between humans and Ghouls. As he battles his own hunger and morality, he becomes involved in a war between the CCG (anti-Ghoul investigators) and the dangerous Ghoul organizations that threaten the city's peace.",
-    "notes": "7.9"
-  },
-  {
-    "title": "hunter-x-hunter",
-    "image": "hunter-x-hunter",
-    "release_date": "2011-10-02",
-    "status": "Hiatus",
-    "type": "Action, Adventure, Fantasy",
-    "description": "Gon Freecss dreams of becoming a legendary Hunter, an elite adventurer capable of discovering hidden treasures, rare creatures, and even hunting criminals. However, his true goal is to find his estranged father, who abandoned him to pursue his own path as a Hunter. Alongside his friends Killua, Kurapika, and Leorio, Gon embarks on a journey that takes him through dangerous tests, life-threatening battles, and encounters with powerful enemies such as the Phantom Troupe and the Chimera Ants. Each challenge brings him closer to uncovering his own potential and the truth behind the Hunter world.",
-    "notes": "9.0"
-  },
-  {
-    "title": "demon-slayer",
-    "image": "demon-slayer",
-    "release_date": "2019-04-06",
-    "status": "Ongoing",
-    "type": "Action, Supernatural, Fantasy",
-    "description": "Tanjiro Kamado, a kind-hearted boy, lives a peaceful life with his family until they are brutally slaughtered by demons. The sole survivor, his younger sister Nezuko, is transformed into a demon but retains some of her human emotions. Determined to avenge his family and cure Nezuko, Tanjiro joins the Demon Slayer Corps, an elite group dedicated to hunting demons. As he masters breathing techniques and fights formidable foes, he uncovers the origins of demons and the powerful Twelve Kizuki, led by the sinister Muzan Kibutsuji.",
+    "type": "Action, Drama, Fantasy",
+    "description": "Eren Yeager and his friends continue their battle against the Titans, uncovering shocking truths about the creatures and the walls that protect humanity.",
     "notes": "8.9"
   },
   {
-    "title": "fairy-tail",
-    "image": "fairy-tail",
-    "release_date": "2009-10-12",
+    "title": "attack-on-titan-season-3",
+    "image": "Attack-on-Titan-Season-3.jpg",
+    "release_date": "2018",
     "status": "Completed",
-    "type": "Action, Adventure, Fantasy",
-    "description": "In the kingdom of Fiore, magic is a fundamental part of everyday life, and powerful wizards join guilds to take on missions. Lucy Heartfilia, a celestial spirit mage, dreams of joining the legendary Fairy Tail guild. She meets Natsu Dragneel, a fire-breathing Dragon Slayer searching for his missing foster dragon father, Igneel. Together with their friends, they take on dangerous quests, battle dark guilds, and unravel secrets about dragons, the origins of magic, and the destiny of their world.",
+    "type": "Action, Drama, Fantasy",
+    "description": "The Survey Corps faces political conspiracies and hidden truths while uncovering the secrets of the Titans and the walls that enclose them.",
+    "notes": "9.1"
+  },
+  {
+    "title": "attack-on-titan",
+    "image": "attack-on-titan.jpg",
+    "release_date": "2013",
+    "status": "Completed",
+    "type": "Action, Drama, Fantasy",
+    "description": "Eren Yeager joins the Survey Corps to fight against Titans after witnessing the destruction of his home, only to uncover dark secrets about their true nature.",
+    "notes": "9.0"
+  },
+  {
+    "title": "beastars",
+    "image": "Beastars.jpg",
+    "release_date": "2019",
+    "status": "Completed",
+    "type": "Drama, Psychological, Romance",
+    "description": "In a world of anthropomorphic animals, a wolf named Legoshi struggles with his instincts and feelings for a small rabbit, Haru, amidst growing tension between carnivores and herbivores.",
     "notes": "7.8"
   },
   {
     "title": "black-clover",
-    "image": "black-clover",
-    "release_date": "2017-10-03",
+    "image": "black-clover.jpg",
+    "release_date": "2017",
     "status": "Ongoing",
-    "type": "Action, Adventure, Fantasy",
-    "description": "Asta and Yuno are orphans who dream of becoming the Wizard King, the strongest mage in the Clover Kingdom. However, in a world where magic is everything, Asta is born without any magical abilities. Through sheer determination and hard training, he obtains a mysterious anti-magic grimoire, allowing him to fight even the strongest wizards. Alongside Yuno, a prodigy with immense mana, Asta faces ruthless enemies, corrupt nobles, and the threat of demonic forces while striving to prove that he can surpass all expectations.",
+    "type": "Action, Fantasy, Magic",
+    "description": "Asta, a boy born without magic in a world where magic is everything, strives to become the Wizard King alongside his rival Yuno.",
+    "notes": "8.0"
+  },
+  {
+    "title": "black-lagoon",
+    "image": "black-lagoon.jpg",
+    "release_date": "2006",
+    "status": "Completed",
+    "type": "Action, Crime, Seinen",
+    "description": "A businessman turned mercenary, Rock, joins the Lagoon Company, a group of outlaws operating in the crime-infested waters of Southeast Asia.",
     "notes": "8.1"
   },
   {
-    "title": "blue-exorcist",
-    "image": "blue-exorcist",
-    "release_date": "2011-04-17",
-    "status": "Ongoing",
-    "type": "Action, Supernatural, Fantasy",
-    "description": "Rin Okumura, a teenager raised by a priest, discovers that he is the son of Satan. After witnessing the brutal death of his adoptive father at the hands of demons, Rin decides to defy his demonic heritage by becoming an exorcist. With his newly awakened blue flames and a cursed sword that suppresses his true form, he joins True Cross Academy to train as an exorcist while keeping his identity a secret. However, dark forces conspire against him, testing his bonds, beliefs, and control over his demonic powers.",
-    "notes": "7.5"
+    "title": "bleach",
+    "image": "bleach.jpg",
+    "release_date": "2004",
+    "status": "Completed",
+    "type": "Action, Adventure, Supernatural",
+    "description": "Ichigo Kurosaki, a teenager who can see ghosts, becomes a Soul Reaper to protect humanity from evil spirits known as Hollows.",
+    "notes": "8.5"
   },
   {
-    "title": "re-zero",
-    "image": "re-zero",
-    "release_date": "2016-04-04",
+    "title": "blue-lock",
+    "image": "blue-lock_6_11zon.jpg",
+    "release_date": "2022",
     "status": "Ongoing",
-    "type": "Fantasy, Psychological, Drama",
-    "description": "Subaru Natsuki is suddenly transported to a fantasy world but quickly realizes he has no special powers—except for one: 'Return by Death,' which allows him to rewind time upon death. Trapped in a cycle of suffering, loss, and painful decisions, Subaru struggles to change fate and protect his loved ones, including the kind-hearted half-elf Emilia. Each reset reveals dark truths about the world, its hidden enemies, and the price of his power.",
+    "type": "Sports, Drama, Psychological",
+    "description": "After Japan's disastrous World Cup performance, a radical training program called 'Blue Lock' aims to create the world's best striker through intense competition.",
+    "notes": "8.3"
+  },
+  {
+    "title": "bunny-girl-senpai",
+    "image": "bunny-girl-senpai.jpg",
+    "release_date": "2018",
+    "status": "Completed",
+    "type": "Romance, Supernatural, Drama",
+    "description": "High school student Sakuta encounters a mysterious girl, Mai, dressed as a bunny girl, suffering from a phenomenon known as 'Adolescence Syndrome.' Together, they unravel its mysteries.",
     "notes": "8.4"
   },
   {
-    "title": "steins-gate",
-    "image": "steins-gate",
-    "release_date": "2011-04-06",
+    "title": "clannad-after-story",
+    "image": "clannad-after-story.jpg",
+    "release_date": "2008",
     "status": "Completed",
-    "type": "Sci-Fi, Psychological, Thriller",
-    "description": "Rintarou Okabe, a self-proclaimed mad scientist, accidentally discovers time travel after modifying a microwave. What starts as a harmless experiment spirals into a series of tragic consequences as he becomes entangled in a conspiracy involving a powerful organization. With his friends’ lives on the line, Okabe must race against time, face devastating losses, and make impossible choices to alter fate. A gripping story of love, sacrifice, and the weight of scientific discovery.",
+    "type": "Drama, Romance, Slice of Life",
+    "description": "Following the events of Clannad, Tomoya and Nagisa face adulthood, learning the importance of family, love, and hardships that come with growing up.",
     "notes": "9.1"
   },
   {
-    "title": "code-geass",
-    "image": "code-geass",
-    "release_date": "2006-10-06",
+    "title": "cowboy-bebop",
+    "image": "cowboy-bebop.jpg",
+    "release_date": "1998",
     "status": "Completed",
-    "type": "Action, Mecha, Psychological",
-    "description": "Lelouch vi Britannia, a prince of the Britannian Empire, gains the power of Geass, which allows him to command anyone to obey his orders. With this newfound ability, he adopts the masked identity of Zero and leads a rebellion against the oppressive Britannian rule in Japan. As his war escalates, Lelouch faces moral dilemmas, betrayals, and the true cost of power in his quest for justice and vengeance.",
+    "type": "Action, Adventure, Sci-Fi",
+    "description": "In the year 2071, bounty hunters Spike Spiegel and his crew take on criminals across the galaxy while confronting their own pasts.",
+    "notes": "8.9"
+  },
+  {
+    "title": "death-parade",
+    "image": "death-parade.jpg",
+    "release_date": "2015",
+    "status": "Completed",
+    "type": "Psychological, Thriller, Drama",
+    "description": "In a mysterious bar, the recently deceased must play life-threatening games to determine their fate—reincarnation or oblivion.",
+    "notes": "8.2"
+  },
+  {
+    "title": "demon-slayer",
+    "image": "demon-slayer.jpg",
+    "release_date": "2019",
+    "status": "Ongoing",
+    "type": "Action, Adventure, Fantasy",
+    "description": "Tanjiro Kamado seeks vengeance and a cure for his sister after his family is slaughtered by demons, leading him to join the Demon Slayer Corps.",
+    "notes": "8.7"
+  },
+  {
+    "title": "dorohedoro",
+    "image": "dorohedoro.jpg",
+    "release_date": "2020",
+    "status": "Completed",
+    "type": "Action, Comedy, Fantasy, Horror, Seinen",
+    "description": "In a dark and gritty city known as Hole, sorcerers from another dimension experiment on its inhabitants. Caiman, a man with a lizard head, is on a mission to uncover his true identity and kill the sorcerer who cursed him. With the help of his friend Nikaido, they hunt down magic users while trying to survive the chaos of their violent world.",
+    "notes": "8.1"
+  },
+  {
+    "title": "dragon-ball-super",
+    "image": "dragon-ball-super.jpg",
+    "release_date": "2015",
+    "status": "Completed",
+    "type": "Action, Adventure, Comedy, Super Power, Martial Arts, Fantasy",
+    "description": "Following the defeat of Majin Buu, Goku and his friends face new challenges as they encounter gods of destruction, powerful warriors from alternate universes, and even resurrected enemies. With the introduction of Super Saiyan God, Ultra Instinct, and new powerful adversaries, the Dragon Ball saga continues to reach new heights of intensity.",
+    "notes": "7.4"
+  },
+  {
+    "title": "elfen-lied",
+    "image": "elfen-lied.jpg",
+    "release_date": "2004",
+    "status": "Completed",
+    "type": "Action, Drama, Horror, Psychological, Supernatural",
+    "description": "Lucy, a mutant with deadly telekinetic powers, escapes from a government lab, suffering from amnesia. Now with the mind of a child and a split personality, she finds shelter with two unsuspecting college students. However, as her memories return, so does her violent nature, bringing destruction and revealing a dark past of experiments and cruelty.",
+    "notes": "7.5"
+  },
+  {
+    "title": "fairy-tail",
+    "image": "fairy-tail.jpg",
+    "release_date": "2009",
+    "status": "Completed",
+    "type": "Action, Adventure, Comedy, Fantasy, Magic, Shounen",
+    "description": "Lucy Heartfilia dreams of joining the famous Fairy Tail guild. After meeting Natsu Dragneel and his cat-like partner Happy, she finds herself recruited into the legendary group. Together with powerful wizards like Gray and Erza, they embark on thrilling adventures, battling dark guilds, uncovering ancient secrets, and forging unbreakable bonds.",
+    "notes": "7.7"
+  },
+  {
+    "title": "fate-stay-night-unlimited-blade-works",
+    "image": "Fate-Stay-night-unlimited-blade-works.jpg",
+    "release_date": "2014",
+    "status": "Completed",
+    "type": "Action, Fantasy, Magic, Supernatural",
+    "description": "In the city of Fuyuki, a deadly battle known as the Holy Grail War takes place. Seven mages summon heroic spirits to fight for the ultimate prize. Shirou Emiya, an idealistic high school student, is dragged into the war and must fight alongside his servant Saber. As he uncovers dark secrets, he questions the true nature of heroism and sacrifice.",
+    "notes": "8.2"
+  },
+  {
+    "title": "fate-zero",
+    "image": "Fate-Zero.jpg",
+    "release_date": "2011",
+    "status": "Completed",
+    "type": "Action, Supernatural, Magic, Fantasy",
+    "description": "The Fourth Holy Grail War is set in motion, with seven masters and their legendary heroic spirits vying for control of the powerful artifact. Kiritsugu Emiya, a mercenary known as the 'Magus Killer,' joins the war for his own ideals. As alliances shift and betrayals emerge, the battle for the Holy Grail takes a dark and tragic turn.",
+    "notes": "8.6"
+  },
+  {
+    "title": "fruits-basket",
+    "image": "fruits-basket.jpg",
+    "release_date": "2019",
+    "status": "Completed",
+    "type": "Drama, Romance, Supernatural",
+    "description": "Tohru Honda, a kind-hearted girl, finds herself living with the mysterious Sohma family after losing her mother. She soon discovers that they are cursed: certain family members transform into animals of the Chinese Zodiac when hugged by the opposite sex. As she gets to know them, Tohru becomes determined to heal their emotional wounds and break the curse.",
+    "notes": "8.9"
+  },
+  {
+    "title": "fullmetal-alchemist-brotherhood",
+    "image": "fullmetal-alchemist-brotherhood.jpg",
+    "release_date": "2009",
+    "status": "Completed",
+    "type": "Action, Adventure, Drama, Fantasy, Magic, Military, Shounen",
+    "description": "Brothers Edward and Alphonse Elric commit the forbidden act of human transmutation to bring their mother back to life. The attempt backfires, costing Edward an arm and a leg and Alphonse his entire body. To restore their bodies, they embark on a journey to find the Philosopher's Stone, facing powerful enemies and uncovering dark truths.",
+    "notes": "9.1"
+  },
+  {
+    "title": "ghost-in-the-shell",
+    "image": "ghost-in-the-shell.jpg",
+    "release_date": "1995",
+    "status": "Completed",
+    "type": "Action, Sci-Fi, Police, Psychological, Mecha, Seinen",
+    "description": "In a future where cybernetic enhancements are common, Major Motoko Kusanagi leads Section 9 in hunting down cyber-criminals. When they encounter the elusive hacker known as the 'Puppet Master,' they are drawn into a web of conspiracy that challenges the very nature of identity and consciousness in a digital age.",
+    "notes": "8.0"
+  },
+  {
+    "title": "hellsing",
+    "image": "hellsing.jpg",
+    "release_date": "2001",
+    "status": "Completed",
+    "type": "Action, Horror, Supernatural, Vampire, Seinen",
+    "description": "The Hellsing Organization exists to protect England from supernatural threats. Their greatest weapon is Alucard, an ancient and powerful vampire who serves the organization. Alongside Seras Victoria, a newly turned vampire, they battle against undead creatures, rival organizations, and a terrifying conspiracy seeking to plunge the world into chaos.",
+    "notes": "7.6"
+  },
+  {
+    "title": "hunter-x-hunter",
+    "image": "hunter-x-hunter.jpg",
+    "release_date": "2011",
+    "status": "Completed",
+    "type": "Action, Adventure, Fantasy, Super Power, Shounen",
+    "description": "Gon Freecss dreams of becoming a Hunter, an elite individual with special privileges and access to unexplored parts of the world. As he trains for the Hunter Exam, he befriends Killua, Leorio, and Kurapika. Together, they face formidable challenges, dangerous enemies, and thrilling adventures in pursuit of their personal goals.",
     "notes": "9.0"
   },
   {
-    "title": "fruits-basket-2019",
-    "image": "fruits-basket-2019",
-    "release_date": "2019-04-06",
+    "title": "Hyouka",
+    "image": "hyouka.jpg",
+    "release_date": "2012",
+    "status": "Completed",
+    "type": "Mystery, Slice of Life, School",
+    "description": "Houtarou Oreki, a high school student who prioritizes energy conservation, joins the Classic Literature Club at his sister's request. Alongside the curious Eru Chitanda and his friends, he begins solving small mysteries surrounding the club and their school, leading to unexpected discoveries.",
+    "notes": "8.1"
+  },
+  {
+    "title": "Jojo's Bizarre Adventure",
+    "image": "jojo's-bizzare-adventure.jpg",
+    "release_date": "2012",
+    "status": "Ongoing",
+    "type": "Action, Adventure, Supernatural",
+    "description": "The Joestar family is destined to battle against supernatural foes over generations. From the rivalry between Jonathan Joestar and Dio Brando to the Stand battles of later descendants, this series is a thrilling ride through time, adventure, and bizarre abilities.",
+    "notes": "8.4"
+  },
+  {
+    "title": "K-On!",
+    "image": "K-On!_1_11zon.jpg",
+    "release_date": "2009",
+    "status": "Completed",
+    "type": "Music, Comedy, School, Slice of Life",
+    "description": "A group of high school girls forms the Light Music Club to save it from disbandment. Despite their initial lack of skill, they grow together through friendship and music, leading to heartwarming and humorous moments.",
+    "notes": "7.8"
+  },
+  {
+    "title": "Kaguya-sama: Love is War",
+    "image": "kaguya-sama--love-is-war.jpg",
+    "release_date": "2019",
+    "status": "Completed",
+    "type": "Comedy, Psychological, Romance, School",
+    "description": "At Shuchiin Academy, student council members Miyuki Shirogane and Kaguya Shinomiya are too proud to confess their love for each other. Instead, they engage in hilarious psychological battles, trying to make the other confess first.",
+    "notes": "8.5"
+  },
+  {
+    "title": "Made in Abyss",
+    "image": "made-in-abyss.jpg",
+    "release_date": "2017",
+    "status": "Ongoing",
+    "type": "Adventure, Drama, Fantasy",
+    "description": "Riko, a young cave raider, dreams of exploring the Abyss, a massive chasm filled with mysterious relics and creatures. When she meets Reg, a robotic boy, they embark on a perilous journey to uncover the secrets of the Abyss and find her missing mother.",
+    "notes": "8.7"
+  },
+  {
+    "title": "March Comes in Like a Lion",
+    "image": "march-comes-in-like-a-lion.jpg",
+    "release_date": "2016",
+    "status": "Completed",
+    "type": "Drama, Slice of Life, Seinen",
+    "description": "Rei Kiriyama, a young professional shogi player, struggles with loneliness and past trauma. Through his interactions with a warm-hearted family, he gradually finds meaning and emotional growth in both his personal and professional life.",
+    "notes": "8.6"
+  },
+  {
+    "title": "Mob Psycho 100",
+    "image": "mob-psycho-100.jpg",
+    "release_date": "2016",
+    "status": "Completed",
+    "type": "Action, Comedy, Supernatural",
+    "description": "Shigeo Kageyama, also known as 'Mob,' is a psychic who suppresses his emotions to control his immense powers. As he navigates daily life and faces supernatural threats, he learns valuable lessons about strength, emotions, and self-worth.",
+    "notes": "8.6"
+  },
+  {
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "image": "mushoku-tensei-jobless-reincarnation.jpg",
+    "release_date": "2021",
+    "status": "Ongoing",
+    "type": "Adventure, Drama, Fantasy",
+    "description": "A jobless and hopeless man dies and is reincarnated in a magical world as Rudeus Greyrat. Determined to live a better life, he uses his intelligence and past experiences to master magic and navigate the challenges of his new world.",
+    "notes": "8.8"
+  },
+  {
+    "title": "My Hero Academia",
+    "image": "my-hero-academia_1_11zon.jpg",
+    "release_date": "2016",
+    "status": "Ongoing",
+    "type": "Action, Superhero, School",
+    "description": "Izuku Midoriya dreams of becoming a hero in a world where superpowers, known as 'Quirks,' are common. After inheriting the legendary Quirk 'One For All,' he enrolls in U.A. High School to train and become a professional hero.",
+    "notes": "8.2"
+  },
+  {
+    "title": "Naruto: Shippuden",
+    "image": "naruto-shippuden.jpg",
+    "release_date": "2007",
+    "status": "Completed",
+    "type": "Action, Adventure, Supernatural",
+    "description": "Years after leaving Konoha, Naruto Uzumaki returns stronger and more determined than ever to save his friend Sasuke and protect the ninja world from looming threats.",
+    "notes": "8.6"
+  },
+  {
+    "title": "Naruto",
+    "image": "naruto.jpg",
+    "release_date": "2002",
+    "status": "Completed",
+    "type": "Action, Adventure, Supernatural",
+    "description": "Naruto Uzumaki, a mischievous ninja, dreams of becoming the Hokage, the strongest ninja in his village. With his friends and mentors, he embarks on adventures that test his will, courage, and friendships.",
+    "notes": "8.0"
+  },
+  {
+    "title": "Neon Genesis Evangelion",
+    "image": "neon-genesis-evangelion.jpg",
+    "release_date": "1995",
+    "status": "Completed",
+    "type": "Action, Drama, Psychological, Mecha",
+    "description": "In a post-apocalyptic world, teenagers are chosen to pilot giant mechs called EVA Units to protect humanity from mysterious beings known as Angels. As the battle intensifies, the pilots face psychological trauma and existential dilemmas.",
+    "notes": "8.5"
+  },
+  {
+    "title": "No Game No Life",
+    "image": "no-game-no-life.jpg",
+    "release_date": "2014",
+    "status": "Completed",
+    "type": "Adventure, Comedy, Fantasy, Supernatural",
+    "description": "Sora and Shiro, genius gamer siblings, are transported to a world where games decide everything. Using their intellect, they aim to conquer this world and challenge its god to a final game.",
+    "notes": "8.1"
+  },
+  {
+    "title": "Nodame Cantabile",
+    "image": "nodame-cantabile.jpg",
+    "release_date": "2007",
+    "status": "Completed",
+    "type": "Comedy, Drama, Music, Romance",
+    "description": "Chiaki, a perfectionist pianist, meets the eccentric yet talented Nodame, who changes his perspective on music and life. Their relationship develops through humor, music, and personal growth.",
+    "notes": "8.2"
+  },
+  {
+    "title": "Noragami",
+    "image": "noragami.jpg",
+    "release_date": "2014",
+    "status": "Completed",
+    "type": "Action, Supernatural, Comedy",
+    "description": "Yato, a minor god, dreams of gaining millions of followers. Alongside his spirit weapon Yukine and the human girl Hiyori, he takes on odd jobs while battling spirits and facing his past.",
+    "notes": "8.0"
+  },
+  {
+    "title": "One Piece",
+    "image": "one-piece.jpg",
+    "release_date": "1999",
+    "status": "Ongoing",
+    "type": "Action, Adventure, Fantasy",
+    "description": "Monkey D. Luffy sets sail with his crew, the Straw Hat Pirates, in search of the legendary One Piece treasure to become the Pirate King.",
+    "notes": "8.7"
+  },
+  {
+    "title": "One Punch Man",
+    "image": "one-punch-man_2_11zon.jpg",
+    "release_date": "2015",
+    "status": "Completed",
+    "type": "Action, Comedy, Superhero",
+    "description": "Saitama, a hero who can defeat any opponent with a single punch, struggles with boredom and seeks a worthy challenge in a world of heroes and monsters.",
+    "notes": "8.5"
+  },
+  {
+    "title": "Re:Zero - Starting Life in Another World",
+    "image": "re-zero-starting-life-in-another-world_3_11zon.jpg",
+    "release_date": "2016",
+    "status": "Ongoing",
+    "type": "Adventure, Drama, Fantasy",
+    "description": "Subaru Natsuki is transported to a fantasy world where he discovers he has the ability to return to a previous point upon death, leading him to uncover mysteries and face brutal trials.",
+    "notes": "8.3"
+  },
+  {
+    "title": "Samurai Champloo",
+    "image": "samurai-champloo.jpg",
+    "release_date": "2004",
+    "status": "Completed",
+    "type": "Action, Adventure, Samurai",
+    "description": "Three strangers—a wild swordsman, a ronin, and a waitress—embark on a journey to find the 'samurai who smells of sunflowers,' facing enemies and adventures along the way.",
+    "notes": "8.5"
+  },
+  {
+    "title": "Spice and Wolf",
+    "image": "spice-and-wolf.jpg",
+    "release_date": "2008",
+    "status": "Completed",
+    "type": "Adventure, Fantasy, Romance",
+    "description": "A traveling merchant, Kraft Lawrence, teams up with Holo, a wise wolf deity, to navigate trade, economics, and their growing companionship.",
+    "notes": "8.2"
+  },
+  {
+    "title": "Steins;Gate",
+    "image": "steins-gate.jpg",
+    "release_date": "2011",
+    "status": "Completed",
+    "type": "Sci-Fi, Thriller",
+    "description": "A self-proclaimed mad scientist, Rintarou Okabe, stumbles upon a way to alter time, leading to unintended consequences that threaten his friends and reality itself.",
+    "notes": "9.0"
+  },
+  {
+    "title": "Sword Art Online: Alicization",
+    "image": "sword-art-online-alicization.jpg",
+    "release_date": "2018",
+    "status": "Completed",
+    "type": "Action, Adventure, Fantasy",
+    "description": "Kirito wakes up in a mysterious virtual world called Underworld, where he must uncover secrets and face new challenges alongside Eugeo and Alice.",
+    "notes": "7.6"
+  },
+  {
+    "title": "Sword Art Online",
+    "image": "sword-art-online.jpg",
+    "release_date": "2012",
+    "status": "Completed",
+    "type": "Action, Adventure, Fantasy",
+    "description": "Players of the virtual reality MMORPG 'Sword Art Online' find themselves trapped, with death in the game meaning death in real life. Kirito fights to escape and protect his friends.",
+    "notes": "7.7"
+  },
+  {
+    "title": "The Promised Neverland",
+    "image": "the-promised-neverland.jpg",
+    "release_date": "2019",
+    "status": "Completed",
+    "type": "Mystery, Thriller, Horror",
+    "description": "A group of orphans living in a seemingly perfect home discover a dark secret and plan their escape from the horrifying fate awaiting them.",
+    "notes": "8.5"
+  },
+  {
+    "title": "The Rising of the Shield Hero",
+    "image": "the-rising-of-the-shield-hero.jpg",
+    "release_date": "2019",
+    "status": "Ongoing",
+    "type": "Action, Adventure, Fantasy",
+    "description": "Naofumi Iwatani is transported to another world as the Shield Hero, only to be betrayed and forced to rebuild his reputation while fighting waves of monstrous threats.",
+    "notes": "8.0"
+  },
+  {
+    "title": "The Seven Deadly Sins",
+    "image": "the-seven-deadly-sins_4_11zon.jpg",
+    "release_date": "2014",
+    "status": "Completed",
+    "type": "Action, Adventure, Fantasy",
+    "description": "Princess Elizabeth searches for the legendary Seven Deadly Sins, a group of exiled knights, to save her kingdom from tyranny.",
+    "notes": "7.8"
+  },
+  {
+    "title": "Tokyo Ghoul",
+    "image": "tokyo-ghoul.jpg",
+    "release_date": "2014",
+    "status": "Completed",
+    "type": "Action, Horror, Supernatural",
+    "description": "Ken Kaneki, a college student, is turned into a half-ghoul after an encounter with a monstrous being. He must navigate his new life while struggling between his human and ghoul identities.",
+    "notes": "7.9"
+  },
+  {
+    "title": "Tokyo Revengers",
+    "image": "tokyo-revenger_5_11zon.jpg",
+    "release_date": "2021",
+    "status": "Ongoing",
+    "type": "Action, Drama, Time Travel",
+    "description": "Takemichi Hanagaki discovers he can travel back in time and tries to change the past to save his childhood love and alter the fate of the Tokyo Manji Gang.",
+    "notes": "7.9"
+  },
+  {
+    "title": "Toradora!",
+    "image": "toradora.jpg",
+    "release_date": "2008",
+    "status": "Completed",
+    "type": "Comedy, Romance, School",
+    "description": "Ryuji Takasu and Taiga Aisaka, despite their differences, form an alliance to help each other confess to their crushes, leading to unexpected emotions.",
+    "notes": "8.0"
+  },
+  {
+    "title": "Trigun",
+    "image": "trigun.jpg",
+    "release_date": "1998",
+    "status": "Completed",
+    "type": "Action, Adventure, Sci-Fi",
+    "description": "Vash the Stampede, a legendary outlaw with a massive bounty, travels a desert wasteland while trying to uphold his pacifist ideals and uncover his past.",
+    "notes": "8.3"
+  },
+  {
+    "title": "Vinland Saga",
+    "image": "vinland-saga.jpg",
+    "release_date": "2019",
+    "status": "Ongoing",
+    "type": "Action, Adventure, Historical",
+    "description": "Thorfinn, a young Viking warrior, seeks revenge against Askeladd for his father's death while navigating the brutal world of Norse warriors.",
+    "notes": "8.8"
+  },
+  {
+    "title": "Your Name",
+    "image": "your-name.jpg",
+    "release_date": "2016",
     "status": "Completed",
     "type": "Drama, Romance, Supernatural",
-    "description": "Tohru Honda, a kind-hearted girl, finds herself living with the mysterious Sohma family after losing her mother. She soon discovers that they are cursed: certain family members transform into animals of the Chinese Zodiac when hugged by the opposite sex. As she gets to know them, Tohru becomes determined to heal their emotional wounds and break the curse. Through heartwarming and heartbreaking moments, she helps them embrace their pasts and look forward to a hopeful future.",
+    "description": "A boy and a girl from different places mysteriously swap bodies, leading them to form a deep connection and unravel a destiny-changing event.",
     "notes": "8.9"
+  },
+  {
+    "title": "Yuri on Ice",
+    "image": "yuri-on-ice.jpg",
+    "release_date": "2016",
+    "status": "Completed",
+    "type": "Sports, Drama, Romance",
+    "description": "Yuri Katsuki, a struggling figure skater, finds guidance and inspiration from his idol, Victor Nikiforov, as he competes in the international arena.",
+    "notes": "8.1"
   }
 ]

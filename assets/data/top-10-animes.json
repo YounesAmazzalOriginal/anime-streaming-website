@@ -1,0 +1,92 @@
+[
+  {
+    "title": "fullmetal-alchemist-brotherhood",
+    "image": "fullmetal-alchemist-brotherhood.jpg",
+    "release_date": "2009-04-05",
+    "status": "Completed",
+    "type": "Action, Adventure, Drama, Fantasy, Magic, Military, Shounen",
+    "description": "Brothers Edward and Alphonse Elric commit the forbidden act of human transmutation to bring their mother back to life. The attempt backfires, costing Edward an arm and a leg and Alphonse his entire body. To restore their bodies, they embark on a journey to find the Philosopher's Stone, facing powerful enemies and uncovering dark truths.",
+    "notes": "9.1"
+  },
+  {
+    "title": "attack-on-titan-season-2",
+    "image": "attack-on-titan-season-2.jpg",
+    "release_date": "2017-04-01",
+    "status": "Completed",
+    "type": "Action, Drama, Fantasy",
+    "description": "Eren Yeager and his friends continue their battle against the Titans, uncovering shocking truths about the creatures and the walls that protect humanity.",
+    "notes": "8.9"
+  },
+  {
+    "title": "attack-on-titan-season-3",
+    "image": "Attack-on-Titan-Season-3.jpg",
+    "release_date": "2018-07-23",
+    "status": "Completed",
+    "type": "Action, Drama, Fantasy",
+    "description": "The Survey Corps faces political conspiracies and hidden truths while uncovering the secrets of the Titans and the walls that enclose them.",
+    "notes": "9.1"
+  },
+  {
+    "title": "attack-on-titan",
+    "image": "attack-on-titan.jpg",
+    "release_date": "2013-04-07",
+    "status": "Completed",
+    "type": "Action, Drama, Fantasy",
+    "description": "Eren Yeager joins the Survey Corps to fight against Titans after witnessing the destruction of his home, only to uncover dark secrets about their true nature.",
+    "notes": "9.0"
+  },
+  {
+    "title": "hunter-x-hunter",
+    "image": "hunter-x-hunter.jpg",
+    "release_date": "2011-10-02",
+    "status": "Completed",
+    "type": "Action, Adventure, Fantasy, Super Power, Shounen",
+    "description": "Gon Freecss dreams of becoming a Hunter, an elite individual with special privileges and access to unexplored parts of the world. As he trains for the Hunter Exam, he befriends Killua, Leorio, and Kurapika. Together, they face formidable challenges, dangerous enemies, and thrilling adventures in pursuit of their personal goals.",
+    "notes": "9.0"
+  },
+  {
+    "title": "One Piece",
+    "image": "one-piece.jpg",
+    "release_date": "1999-10-20",
+    "status": "Ongoing",
+    "type": "Action, Adventure, Fantasy",
+    "description": "Monkey D. Luffy sets sail with his crew, the Straw Hat Pirates, in search of the legendary One Piece treasure to become the Pirate King.",
+    "notes": "8.7"
+  },
+  {
+    "title": "Steins;Gate",
+    "image": "steins-gate.jpg",
+    "release_date": "2011-04-06",
+    "status": "Completed",
+    "type": "Sci-Fi, Thriller",
+    "description": "A self-proclaimed mad scientist, Rintarou Okabe, stumbles upon a way to alter time, leading to unintended consequences that threaten his friends and reality itself.",
+    "notes": "9.0"
+  },
+  {
+    "title": "Neon Genesis Evangelion",
+    "image": "neon-genesis-evangelion.jpg",
+    "release_date": "1995-10-04",
+    "status": "Completed",
+    "type": "Action, Drama, Psychological, Mecha",
+    "description": "In a post-apocalyptic world, teenagers are chosen to pilot giant mechs called EVA Units to protect humanity from mysterious beings known as Angels. As the battle intensifies, the pilots face psychological trauma and existential dilemmas.",
+    "notes": "8.5"
+  },
+  {
+    "title": "Vinland Saga",
+    "image": "vinland-saga.jpg",
+    "release_date": "2019-07-08",
+    "status": "Ongoing",
+    "type": "Action, Adventure, Historical",
+    "description": "Thorfinn, a young Viking warrior, seeks revenge against Askeladd for his father's death while navigating the brutal world of Norse warriors.",
+    "notes": "8.8"
+  },
+  {
+    "title": "demon-slayer",
+    "image": "demon-slayer.jpg",
+    "release_date": "2019-04-06",
+    "status": "Ongoing",
+    "type": "Action, Adventure, Fantasy",
+    "description": "Tanjiro Kamado seeks vengeance and a cure for his sister after his family is slaughtered by demons, leading him to join the Demon Slayer Corps.",
+    "notes": "8.7"
+  }
+]

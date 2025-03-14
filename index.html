@@ -44,9 +44,9 @@
       };
     </script>
   </head>
-  <body class="bg-black text-ivory">
+  <body class="bg-black text-ivory selection:bg-crimson mb-10 font-jost">
     <!-- ================ nav ================ -->
-    <nav class="flex items-center justify-evenly h-20">
+    <nav class="flex items-center justify-evenly h-[70px]">
       <a href="" class="w-40">
         <img src="assets/images/nav-logo.png" alt="" />
       </a>
@@ -65,19 +65,32 @@
         </li>
       </ul>
       <div class="flex items-center gap-10">
-        <div class="flex pl-3 items-center gap-2 bg-white/20 w-60 h-7 rounded">
-          <img
-            class="invert w-2.5 opacity-50"
-            src="assets/icons/search.png"
-            alt=""
-          />
-          <input
-            class="bg-transparent placeholder:text-white placeholder:opacity-50 text-[13px] outline-0"
-            type="text"
-            name=""
-            id=""
-            placeholder="Search"
-          />
+        <div
+          class="relative flex items-center pl-3 bg-white/20 w-60 h-7 rounded"
+        >
+          <div class="flex items-center gap-2">
+            <img
+              class="invert w-2.5 opacity-50"
+              src="assets/icons/search.png"
+              alt=""
+            />
+            <input
+              class="bg-transparent placeholder:text-white placeholder:opacity-50 text-[13px] outline-0"
+              type="text"
+              name=""
+              id="search-input"
+              placeholder="Search"
+            />
+          </div>
+          <!-- Search Results -->
+          <div
+            id="search-result-container"
+            class="hidden z-[200] absolute top-10 -left-10 bg-black/90 p-2 h-[400px] w-[310px] overflow-y-scroll overflow-x-hidden flex flex-col gap-2"
+            style="scrollbar-width: thin; scrollbar-color: crimson black"
+          >
+            <h1 class="bg-blue-400 text-white text-xl">1000</h1>
+            <!--  -->
+          </div>
         </div>
         <button class="p-1">
           <img class="invert w-4" src="assets/icons/user.png" alt="" />
@@ -87,69 +100,36 @@
 
     <!-- ================ header ================ -->
     <header class="">
-      <div class="w-[90%] h-[80vh] relative mx-auto">
+      <div class="w-[90%] h-[85vh] relative mx-auto">
         <button
-          class="border-4 border-black bg-charcoal w-14 h-14 absolute top-1/2 -left-7 -translate-y-1/2 rotate-45 z-[2]"
+          id="leftSwip"
+          class="SwipBtn z-[40] border-4 border-black bg-charcoal w-14 h-14 absolute top-1/2 -left-7 -translate-y-1/2 rotate-45 z-[2]"
         >
           <i class="fa-solid fa-angle-left -rotate-45"></i>
         </button>
 
-        <div class="h-full w-full flex overflow-hidden">
-          <img
-            src="assets/images/naruto-cover.jpg"
-            alt=""
-            class="min-w-full h-full object-cover"
-          />
-
-          <img
-            src="assets/images/naruto-cover.jpg"
-            alt=""
-            class="min-w-full h-full object-cover"
-          />
-          <img
-            src="assets/images/naruto-cover.jpg"
-            alt=""
-            class="min-w-full h-full object-cover"
-          />
+        <div id="hero" class="h-full w-full flex overflow-hidden">
+          <!--  -->
         </div>
         <div
           class="bg-gradient-to-t from-black/90 to-transparent w-full h-full absolute top-0 left-0 pointer-events-none"
         ></div>
 
-        <div class="absolute bottom-0 left-0 m-14 grid gap-4">
-          <p
-            class="bg-ivory text-crimson text-[12px] w-16 h-6 flex justify-center items-center"
-          >
-            Type
-          </p>
-          <h1 class="font-bebas text-7xl">anime title</h1>
-          <p class="w-2/3 opacity-80 font-[300] text-[15px]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, sed
-            laborum odio ducimus atque esse rem labore sunt, est nihil amet,
-            magni soluta et quae rerum in repellat. Nulla, aut.
-          </p>
-          <button
-            class="bg-crimson w-40 h-10 rounded-full flex items-center justify-evenly border border-transparent hover:bg-transparent hover:border-crimson hover:text-crimson transition-all duration-450 hover:scale-95"
-          >
-            <i class="fa-solid fa-play text-sm"></i>
-            <p class="text-sm capitalize">watch now</p>
-          </button>
-        </div>
-
         <button
-          class="border-4 border-black bg-charcoal w-14 h-14 absolute top-1/2 -right-7 -translate-y-1/2 rotate-45 z-[2]"
+          id="rightSwip"
+          class="SwipBtn z-[40] border-4 border-black bg-charcoal w-14 h-14 absolute top-1/2 -right-7 -translate-y-1/2 rotate-45 z-[2]"
         >
           <i class="fa-solid fa-angle-right -rotate-45"></i>
         </button>
       </div>
     </header>
 
-    <!-- Trending Section -->
+    <!-- Top Animes Section -->
     <section class="w-[90%] mx-auto">
       <div class="flex items-center justify-between mt-20">
         <div class="flex items-center gap-5">
           <div class="bg-crimson w-2 h-11"></div>
-          <h1 class="capitalize text-3xl font-bold">trending animes</h1>
+          <h1 class="capitalize text-3xl font-bold">top 10 animes</h1>
         </div>
         <button
           onclick="viewwAll(this)"
@@ -163,42 +143,19 @@
           />
         </button>
       </div>
+
       <div
         id="best-animes-container"
-        class="relative mt-10 flex gap-2 overflow-x-scroll pb-6"
-        style="scrollbar-width: none; -ms-overflow-style: none"
-      >
-        <!-- <div
-          class="cursor-pointer min-w-[200px] min-h-[280px] max-w-[200px] max-h-[280px] transition-all duration-300 relative rounded-md overflow-hidden group"
-        >
-          <h1
-            class="absolute top-0 left-0 mx-3 my-2 z-[4] font-montserrat font-bold text-4xl after:content-[''] after:w-20 after:h-20 after:bg-charcoal/70 after:rounded-full after:absolute after:blur-xl after:top-1/2 after:left-1/2 after:z-[-1] after:-translate-y-1/2 after:-translate-x-1/2"
-          >
-            1
-          </h1>
-          <div
-            class="bg-gradient-to-t from-black/80 via-transparent to-transparent w-full h-full absolute top-0 left-0 z-[2] pointer-events-none"
-          ></div>
-          <img
-            class="w-full h-full object-cover scale-110 hover:scale-100 duration-300 transition-all group-hover:brightness-50"
-            src="assets/images/animes/dragon-ball-super.webp"
-            alt=""
-          />
-          <h1
-            class="absolute bottom-0 left-1/2 -translate-x-1/2 whitespace-nowrap z-[2] capitalize mb-3 font-[500]"
-          >
-            dragon ball super
-          </h1>
-        </div> -->
-      </div>
+        class="relative mt-10 flex gap-2 flex-nowrap h-auto overflow-hidden"
+      ></div>
     </section>
 
-    <!-- Latest Releases -->
+    <!-- Genres -->
     <section class="w-[90%] mx-auto">
       <div class="flex items-center justify-between mt-20">
         <div class="flex items-center gap-5">
           <div class="bg-crimson w-2 h-11"></div>
-          <h1 class="capitalize text-3xl font-bold">latest releases</h1>
+          <h1 class="capitalize text-3xl font-bold">genres</h1>
         </div>
         <button
           onclick="viewwAll(this)"
@@ -212,27 +169,20 @@
           />
         </button>
       </div>
+
+      <!-- This container should expand based on content -->
       <div
-        class="relative mt-10 flex gap-2 overflow-x-scroll pb-6"
-        style="scrollbar-width: none; -ms-overflow-style: none"
+        id="genre-container"
+        class="relative mt-10 pb-4 flex gap-2 flex-nowrap overflow-x-scroll h-auto"
+        style="scrollbar-width: thin; scrollbar-color: crimson #1c1c1c"
       >
-        <div
-          class="cursor-pointer min-w-[200px] min-h-[280px] max-w-[200px] max-h-[280px] transition-all duration-300 relative rounded-md overflow-hidden group"
+      <!-- <a href=""
+          class="relative bg-charcoal min-w-[200px] min-h-[300px] max-w-[200px] overflow-hidden
+          hover:bg-crimson/20 transition-all duration-600
+          max-h-[300px] rounded-lg flex justify-center items-center"
         >
-          <div
-            class="bg-gradient-to-t from-black/80 via-transparent to-transparent w-full h-full absolute top-0 left-0 z-[2] pointer-events-none"
-          ></div>
-          <img
-            class="w-full h-full object-cover scale-110 hover:scale-100 duration-300 transition-all group-hover:brightness-50"
-            src="assets/images/animes/hunter-x-hunter.jpeg"
-            alt=""
-          />
-          <h1
-            class="absolute bottom-0 left-1/2 -translate-x-1/2 whitespace-nowrap z-[2] capitalize mb-3 font-[500]"
-          >
-            hunter x hunter
-          </h1>
-        </div>
+          <h1 class="capitalize text-xl">action</h1>
+      </a> -->
       </div>
     </section>
   </body>
