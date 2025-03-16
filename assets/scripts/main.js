@@ -74,7 +74,7 @@ fetch("/assets/data/top-10-animes.json")
     var bestAnimes = document.getElementById("best-animes-container");
 
     for (let i = 0; i < animesData10.length + 1; i++) {
-      bestAnimes.innerHTML += `<a href="" class="block">
+      bestAnimes.innerHTML += `<a onclick="animeCard(this)" href="anime-details.html" class="block">
   <div title="${
     animesData10[i].title
   }" class="group relative w-[200px] h-[300px] transition-all duration-300 rounded-lg overflow-hidden">
@@ -120,74 +120,6 @@ fetch("/assets/data/top-10-animes.json")
 fetch("/assets/data/animes.json")
   .then((res) => res.json())
   .then((animes) => {
-    // ANIME SEARCH
-    var searchResultContainer = document.getElementById(
-      "search-result-container"
-    );
-    var searchInput = document.getElementById("search-input");
-    searchInput.value = searchInput.value.toLowerCase();
-
-    let resultsArr = [];
-
-    function searchAnime() {
-      resultsArr = [];
-      searchResultContainer.innerHTML = "";
-
-      if (searchInput.value.length > 0) {
-        searchResultContainer.classList.remove("hidden");
-      } else {
-        searchResultContainer.classList.add("hidden");
-      }
-
-      for (let i = 0; i < animes.length; i++) {
-        if (
-          animes[i].title
-            .toLowerCase()
-            .includes(searchInput.value.toLowerCase())
-        ) {
-          var singleAnime = `<a href="">
-              <div class="bg-black/60 w-full p-2 flex gap-3 relative">
-                <div class="relative overflow-hidden bg-blue-200 min-w-16 min-h-16 max-w-16 max-h-16">
-                  <img class="z-[1] w-full h-full object-contain absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
-                    src="assets/images/animes/${animes[i].image}" alt="" />
-                  <img class="w-full h-full object-cover absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 brightness-[60%]"
-                    src="assets/images/animes/${animes[i].image}" alt="" />
-                </div>
-                <div class="flex flex-col justify-around">
-                  <h1 class="capitalize">${animes[i].title.replaceAll(
-                    "-",
-                    " "
-                  )}</h1>
-                  <div class="capitalize text-[12px] flex gap-1 text-white/80">
-                    <div class="bg-white/10 w-fit px-2 h-[20px] rounded-sm flex items-center hover:text-black/80 hover:bg-white/70 transition-all cursor-default">
-                      ${animes[i].release_date}
-                    </div>
-                    <div class="bg-white/10 w-fit px-2 h-[20px] rounded-sm flex items-center hover:text-black/80 hover:bg-white/70 transition-all cursor-default">
-                      ${animes[i].notes}
-                    </div>
-                    <div class="bg-white/10 w-fit px-2 h-[20px] rounded-sm flex items-center hover:text-black/80 hover:bg-white/70 transition-all cursor-default">
-                      ${animes[i].status}
-                    </div>
-                    <div class="bg-crimson/10 w-fit px-2 h-[20px] rounded-sm flex items-center hover:text-black/80 hover:bg-white/70 transition-all cursor-default">
-                      HD
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>`;
-
-          resultsArr.push(singleAnime);
-        }
-      }
-
-      searchResultContainer.innerHTML = resultsArr.join("");
-    }
-
-    searchInput.addEventListener("input", function () {
-      this.value = this.value.toLowerCase();
-      searchAnime();
-    });
-
     // Genres
     let genres = [];
     for (let i = 0; i < animes.length; i++) {
@@ -196,18 +128,69 @@ fetch("/assets/data/animes.json")
 
     const result = [...new Set(genres.flatMap((genre) => genre.split(", ")))];
 
-    console.log(result);
+    // console.log(result);
 
     result.forEach((type) => {
       var genreContainer = document.getElementById("genre-container");
 
-      genreContainer.innerHTML += `<a href=""
-          class="relative bg-charcoal min-w-[200px] min-h-[300px] max-w-[200px] overflow-hidden
-          hover:bg-crimson/20 transition-all duration-600
-          max-h-[300px] rounded-lg flex justify-center items-center"
+      genreContainer.innerHTML += `<a
+          href="viewall.html"
+          id="genre-card"
+          class="relative group cursor-pointer bg-black min-w-[200px] min-h-[300px] 
+          max-w-[200px] overflow-hidden transition-all duration-[0.6s] max-h-[300px] 
+          rounded-lg flex justify-center items-center"
         >
-          <h1 class="capitalize text-xl">${type}</h1>
-      </a>`;
+          <img
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+            w-[140%] h-[140%] object-cover hue-rotate-[330deg] z-[1] 
+            grayscale group-hover:w-[200%] group-hover:h-[160%] 
+            group-hover:grayscale-[70%] opacity-50
+            transition-all duration-[0.6s]"
+            src="assets/images/card-texture.png"
+            alt=""
+          />
+          <h1 class="capitalize text-xl z-[2] drop-shadow-[0_0_10px_transparent]
+          group-hover:drop-shadow-[0_0_10px_crimson]">${type}</h1>
+        </a>`;
+
+      function genreCard(target) {
+        var genre = target.querySelector("h1");
+
+        let genreText = genre.textContent.trim();
+
+        let genreMatched = animes.filter(function (anime) {
+          return anime.type.includes(genreText);
+        });
+
+        console.log(genreMatched);
+        localStorage.setItem("genreMatched", JSON.stringify(genreMatched));
+      }
+      document.querySelectorAll("#genre-card").forEach((genre) => {
+        genre.addEventListener("click", function () {
+          genreCard(this);
+        });
+      });
     });
+
+    // Genre Swip
+    function genreSwip() {
+      var genreContainer = document.getElementById("genre-container");
+      var genreCard = document.getElementById("genre-card");
+
+      var genreCardWidth = genreCard.getBoundingClientRect().width;
+      var genreContainerGap = parseFloat(
+        window.getComputedStyle(genreContainer).gap
+      );
+
+      var scrollCount = Math.ceil((window.innerWidth / window.outerWidth) * 2);
+
+      genreContainer.scrollBy({
+        left: (genreCardWidth + genreContainerGap) * scrollCount,
+        behavior: "smooth",
+      });
+    }
+    document
+      .getElementById("right-genre-swip")
+      .addEventListener("click", genreSwip);
   })
   .catch((error) => console.error("Error fetching anime data:", error));

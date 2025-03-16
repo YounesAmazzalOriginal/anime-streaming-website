@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <title>home</title> -->
+    <title>AnimeVerse | Explore Top Anime & Genres</title>
 
     <!-- Google Fonts -->
     <link
@@ -23,6 +23,10 @@
 
     <!-- Javascript -->
     <script src="assets/scripts/main.js" defer></script>
+    <script src="assets/scripts/search.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
     <script>
       tailwind.config = {
@@ -47,7 +51,7 @@
   <body class="bg-black text-ivory selection:bg-crimson mb-10 font-jost">
     <!-- ================ nav ================ -->
     <nav class="flex items-center justify-evenly h-[70px]">
-      <a href="" class="w-40">
+      <a href="index.html" class="w-40">
         <img src="assets/images/nav-logo.png" alt="" />
       </a>
       <ul class="capitalize flex gap-20">
@@ -151,13 +155,30 @@
     </section>
 
     <!-- Genres -->
-    <section class="w-[90%] mx-auto">
+    <section id="genre-section" class="w-[90%] mx-auto">
       <div class="flex items-center justify-between mt-20">
         <div class="flex items-center gap-5">
           <div class="bg-crimson w-2 h-11"></div>
           <h1 class="capitalize text-3xl font-bold">genres</h1>
         </div>
-        <button
+        <div class="flex">
+          <button
+            class="p-1.5 flex items-center gap-2 opacity-60 hover:opacity-80 transition cursor-pointer"
+          >
+            <img class="invert w-3" src="assets/icons/left-arrow.png" alt="" />
+          </button>
+          <button
+            id="right-genre-swip"
+            class="p-1.5 flex items-center gap-2 opacity-60 hover:opacity-80 transition cursor-pointer"
+          >
+            <img
+              class="invert rotate-180 w-3"
+              src="assets/icons/left-arrow.png"
+              alt=""
+            />
+          </button>
+        </div>
+        <!-- <button
           onclick="viewwAll(this)"
           class="flex items-center gap-2 opacity-60 hover:opacity-80 transition cursor-pointer"
         >
@@ -167,7 +188,7 @@
             src="assets/icons/left-arrow.png"
             alt=""
           />
-        </button>
+        </button> -->
       </div>
 
       <!-- This container should expand based on content -->
@@ -176,13 +197,25 @@
         class="relative mt-10 pb-4 flex gap-2 flex-nowrap overflow-x-scroll h-auto"
         style="scrollbar-width: thin; scrollbar-color: crimson #1c1c1c"
       >
-      <!-- <a href=""
-          class="relative bg-charcoal min-w-[200px] min-h-[300px] max-w-[200px] overflow-hidden
-          hover:bg-crimson/20 transition-all duration-600
-          max-h-[300px] rounded-lg flex justify-center items-center"
+        <!-- <a
+          href="viewall.html"
+          id="genre-card"
+          class="relative group cursor-pointer bg-black min-w-[200px] min-h-[300px] 
+          max-w-[200px] overflow-hidden transition-all duration-[0.6s] max-h-[300px] 
+          rounded-lg flex justify-center items-center"
         >
-          <h1 class="capitalize text-xl">action</h1>
-      </a> -->
+          <img
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+            w-[140%] h-[140%] object-cover hue-rotate-[330deg] z-[1] 
+            grayscale group-hover:w-[200%] group-hover:h-[160%] 
+            group-hover:grayscale-[70%] opacity-50
+            transition-all duration-[0.6s]"
+            src="assets/images/card-texture.png"
+            alt=""
+          />
+          <h1 class="capitalize text-xl z-[2] drop-shadow-[0_0_10px_transparent]
+          group-hover:drop-shadow-[0_0_10px_crimson]">${type}</h1>
+        </a> -->
       </div>
     </section>
   </body>
