@@ -24,9 +24,26 @@
     <!-- Javascript -->
     <script src="assets/scripts/main.js" defer></script>
     <script src="assets/scripts/search.js" defer></script>
+    <script src="assets/scripts/forms.js" defer></script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <style>
+      input[type="checkbox"]:checked::before {
+        content: "\f00c";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      label {
+        user-select: none;
+      }
+    </style>
 
     <script>
       tailwind.config = {
@@ -42,6 +59,12 @@
               montserrat: ["Montserrat", "sans-serif"],
               jost: ["Jost", "sans-serif"],
               bebas: ["Bebas Neue", "cursive"],
+            },
+            screens: {
+              sm: "640px", // Phones
+              md: "768px", // Tablets
+              lg: "1024px", // Small desktops
+              xl: "1280px", // Large desktops
             },
           },
         },
@@ -59,10 +82,7 @@
           <a href="">home</a>
         </li>
         <li class="hover:text-crimson transition-all duration-500">
-          <a href="">anime list</a>
-        </li>
-        <li class="hover:text-crimson transition-all duration-500">
-          <a href="">genre</a>
+          <a href="">discovery</a>
         </li>
         <li class="hover:text-crimson transition-all duration-500">
           <a href="">about us</a>
@@ -74,12 +94,12 @@
         >
           <div class="flex items-center gap-2">
             <img
-              class="invert w-2.5 opacity-50"
+              class="w-2.5 opacity-50"
               src="assets/icons/search.png"
               alt=""
             />
             <input
-              class="bg-transparent placeholder:text-white placeholder:opacity-50 text-[13px] outline-0"
+              class="bg-transparent placeholder:text-ivory placeholder:opacity-50 text-[13px] outline-0"
               type="text"
               name=""
               id="search-input"
@@ -92,18 +112,18 @@
             class="hidden z-[200] absolute top-10 -left-10 bg-black/90 p-2 h-[400px] w-[310px] overflow-y-scroll overflow-x-hidden flex flex-col gap-2"
             style="scrollbar-width: thin; scrollbar-color: crimson black"
           >
-            <h1 class="bg-blue-400 text-white text-xl">1000</h1>
+            <h1 class="bg-blue-400 text-ivory text-xl">1000</h1>
             <!--  -->
           </div>
         </div>
-        <button class="p-1">
+        <button id="user-btn" class="p-1">
           <img class="invert w-4" src="assets/icons/user.png" alt="" />
         </button>
       </div>
     </nav>
 
     <!-- ================ header ================ -->
-    <header class="">
+    <header class="screens-sm:hidden screens-md:hidden">
       <div class="w-[90%] h-[85vh] relative mx-auto">
         <button
           id="leftSwip"

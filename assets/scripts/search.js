@@ -39,7 +39,7 @@ fetch("/assets/data/animes.json")
                     "-",
                     " "
                   )}</h1>
-                  <div class="capitalize text-[12px] flex gap-1 text-white/80">
+                  <div class="capitalize text-[12px] flex gap-1 text-ivory/80">
                     <div class="bg-white/10 w-fit px-2 h-[20px] rounded-sm flex items-center hover:text-black/80 hover:bg-white/70 transition-all cursor-default">
                       ${animes[i].release_date}
                     </div>

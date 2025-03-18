@@ -22,7 +22,7 @@
     />
 
     <!-- Javascript -->
-    <script src="assets/scripts/main.js" defer></script>
+    <script src="assets/scripts/discovery.js" defer></script>
     <script src="assets/scripts/search.js" defer></script>
     <script src="assets/scripts/forms.js" defer></script>
 
@@ -283,60 +283,43 @@
       </button>
     </form>
 
-    <!-- ================ header ================ -->
-    <section
-      class="flex justify-center items-center h-[calc(100vh-70px-100px)]"
-    >
-      <!-- <header class="bg-red-flex justify-center gap-10">
-        <div
-          class="bg-charcoal min-w-[200px] min-h-[300px] max-w-[200px] max-h-[300px] overflow-hidden rounded-lg relative"
+    <section class="w-[90%] mx-auto mt-20">
+      <div class="flex items-center gap-5">
+        <div class="bg-crimson w-2 h-11"></div>
+        <h1 class="capitalize text-3xl font-bold">anime discovery hub</h1>
+      </div>
+      <form
+        action=""
+        class="relative mt-10 mx-12 flex flex-col gap-10 h-[60vh]"
+      >
+        <div>
+          <h1 class="text-ivory capitalize text-xl">genre :</h1>
+          <div
+            id="genres-filter"
+            class="mt-5 ml-7 text-sm flex flex-wrap gap-1"
+          >
+            <!-- <button
+              class="bg-white/10 text-ivory/50 px-2.5 h-[25px] rounded-sm hover:text-black/80 hover:bg-white/70 transition-all"
+            >
+              2000
+            </button> -->
+          </div>
+        </div>
+        <div>
+          <h1 class="text-ivory capitalize text-xl">release date :</h1>
+          <div id="dates-filter" class="mt-5 ml-7 flex flex-wrap text-sm gap-1">
+            <!--  -->
+          </div>
+        </div>
+
+        <button
+          type="button"
+          id="applyfilter-btn"
+          class="group bg-crimson w-40 h-10 rounded-full flex items-center justify-evenly border border-transparent hover:bg-transparent hover:border-crimson hover:text-crimson transition-all duration-300 hover:scale-95 absolute bottom-0 right-0"
         >
-          <img src="assets/images/animes/naruto.jpg" alt="" />
-        </div>
-        <div class="w-[70%] flex flex-col gap-4">
-          <h1 class="text-3xl capitalize font-[600]">naruto</h1>
-          <div class="capitalize text-[14px] flex gap-1 text-ivory/80">
-            <div
-              class="bg-white/10 w-fit px-3 h-[25px] rounded-sm flex items-center hover:text-black/80 hover:bg-white/70 transition-all cursor-default"
-            >
-              2022
-            </div>
-            <div
-              class="bg-white/10 w-fit px-3 h-[25px] rounded-sm flex items-center hover:text-black/80 hover:bg-white/70 transition-all cursor-default"
-            >
-              8.1
-            </div>
-            <div
-              class="bg-white/10 w-fit px-3 h-[25px] rounded-sm flex items-center hover:text-black/80 hover:bg-white/70 transition-all cursor-default"
-            >
-              completed
-            </div>
-            <div
-              class="bg-crimson/10 w-fit px-3 h-[25px] rounded-sm flex items-center hover:text-black/80 hover:bg-white/70 transition-all cursor-default"
-            >
-              HD
-            </div>
-          </div>
-          <div class="flex gap-2">
-            <button
-              class="bg-crimson w-40 h-10 rounded-full flex items-center justify-evenly border border-transparent hover:bg-transparent hover:border-crimson hover:text-crimson transition-all duration-450 hover:scale-95"
-            >
-              <i class="fa-solid fa-play text-sm"></i>
-              <p class="text-sm capitalize">watch now</p>
-            </button>
-            <button
-              class="bg-white/25 w-40 h-10 rounded-full flex items-center justify-evenly border border-transparent hover:bg-transparent hover:border-white/75 hover:text-ivory/75 transition-all duration-450"
-            >
-              <i class="fa-solid fa-plus text-sm"></i>
-              <p class="text-sm">Add to List</p>
-            </button>
-          </div>
-          <p class="opacity-70">
-            In the year 2071, bounty hunters Spike Spiegel and his crew take on
-            criminals across the galaxy while confronting their own pasts.
-          </p>
-        </div>
-      </header> -->
+          <p class="text-sm capitalize">apply filters</p>
+        </button>
+      </form>
     </section>
   </body>
 </html>

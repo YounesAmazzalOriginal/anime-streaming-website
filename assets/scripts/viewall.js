@@ -3,9 +3,7 @@ var section = document.querySelector("section");
 var genreMatched = JSON.parse(localStorage.getItem("genreMatched"));
 
 genreMatched.forEach((genreMatched) => {
-  console.log(genreMatched.image);
-
-  section.innerHTML += `<a href="" class="block">
+  section.innerHTML += `<a id="anime-card" href="anime-details.html" class="block">
         <div
           title="${genreMatched.title}"
           class="group relative w-[200px] h-[300px] transition-all duration-300 rounded-lg overflow-hidden"
@@ -22,7 +20,7 @@ genreMatched.forEach((genreMatched) => {
             ></div>
 
             <h1
-              class="absolute bottom-3 left-1/2 -translate-x-1/2 text-white text-sm font-semibold w-[90%] truncate text-center capitalize"
+              class="absolute bottom-3 left-1/2 -translate-x-1/2 text-ivory text-sm font-semibold w-[90%] truncate text-center capitalize"
             >
               ${genreMatched.title.replaceAll("-", " ")}
             </h1>
@@ -35,4 +33,23 @@ genreMatched.forEach((genreMatched) => {
           </div>
         </div>
       </a>`;
+
+  function animeCard(target) {
+    var getData = JSON.parse(localStorage.getItem("genreMatched"));
+    const cards = document.querySelectorAll("#anime-card");
+
+    cards.forEach((card, index) => {
+      if (card === target) {
+        console.log(getData[index]);
+
+        localStorage.setItem("animeDetailed", JSON.stringify(getData[index]));
+      }
+    });
+  }
+
+  document.querySelectorAll("#anime-card").forEach((card) => {
+    card.addEventListener("click", function () {
+      animeCard(this);
+    });
+  });
 });

@@ -73,8 +73,8 @@ fetch("/assets/data/top-10-animes.json")
   .then((animesData10) => {
     var bestAnimes = document.getElementById("best-animes-container");
 
-    for (let i = 0; i < animesData10.length + 1; i++) {
-      bestAnimes.innerHTML += `<a onclick="animeCard(this)" href="anime-details.html" class="block">
+    for (let i = 0; i < animesData10.length; i++) {
+      bestAnimes.innerHTML += `<a class="block">
   <div title="${
     animesData10[i].title
   }" class="group relative w-[200px] h-[300px] transition-all duration-300 rounded-lg overflow-hidden">
@@ -90,13 +90,13 @@ fetch("/assets/data/top-10-animes.json")
       <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
 
       <!-- Anime Title (Fixed Alignment) -->
-      <h1 class="absolute bottom-3 left-1/2 -translate-x-1/2 text-white text-sm font-semibold w-[90%] truncate text-center capitalize">
+      <h1 class="absolute bottom-3 left-1/2 -translate-x-1/2 text-ivory text-sm font-semibold w-[90%] truncate text-center capitalize">
         ${animesData10[i].title.replaceAll("-", " ")}
       </h1>
 
       <!-- Ranking Number (Fixed Positioning) -->
       <h1
-        class="absolute top-2 left-3 font-montserrat font-extrabold text-3xl text-white"
+        class="absolute top-2 left-3 font-montserrat font-extrabold text-3xl text-ivory"
         style="text-shadow: 2px 2px 4px rgba(30, 30, 30, 0.8)"
       >
         ${i + 1}
