@@ -48,8 +48,8 @@ document.getElementById("login-link").addEventListener("click", () => {
   signupForm.classList.add("hidden");
 });
 
-
 function closeForm(target) {
+  alert("closeForm");
   var closeFormBtn = target.closest("form");
   closeFormBtn.classList.add("hidden");
 }

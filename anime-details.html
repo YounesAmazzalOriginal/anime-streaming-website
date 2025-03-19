@@ -43,6 +43,10 @@
       label {
         user-select: none;
       }
+      img {
+        user-select: none;
+        pointer-events: none;
+      }
     </style>
 
     <script>
@@ -71,7 +75,7 @@
       };
     </script>
   </head>
-  <body class="bg-black text-ivory selection:bg-crimson mb-10 font-jost">
+  <body class="bg-black text-ivory selection:bg-crimson font-jost">
     <!-- ================ nav ================ -->
     <nav class="flex items-center justify-evenly h-[70px]">
       <a href="index.html" class="w-40">
@@ -88,7 +92,7 @@
           <a href="">genre</a>
         </li>
         <li class="hover:text-crimson transition-all duration-500">
-          <a href="">about us</a>
+          <a href="about-us.html">about us</a>
         </li>
       </ul>
       <div class="flex items-center gap-10">
@@ -112,7 +116,7 @@
           <!-- Search Results -->
           <div
             id="search-result-container"
-            class="hidden z-[200] absolute top-10 -left-10 bg-black/90 p-2 h-[400px] w-[310px] overflow-y-scroll overflow-x-hidden flex flex-col gap-2"
+            class="hidden z-[200] absolute top-10 -left-10 bg-black/90 p-2 h-[400px] w-[310px] overflow-x-hidden flex flex-col gap-2 rounded-lg"
             style="scrollbar-width: thin; scrollbar-color: crimson black"
           >
             <h1 class="bg-blue-400 text-ivory text-xl">1000</h1>

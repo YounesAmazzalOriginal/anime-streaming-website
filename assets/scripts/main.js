@@ -17,7 +17,7 @@ fetch("/assets/data/header-animes.json")
             hover:scale-105 transition-all duration-700"
           />
           <div class="absolute bottom-0 left-0 m-14 grid gap-4 z-10">
-            <p class="bg-ivory text-crimson text-[12px] w-fit px-3 h-6 flex justify-center items-center capitalize">
+            <p class="bg-bg-ivory text-crimson text-[12px] w-fit px-3 h-6 flex justify-center items-center capitalize">
               ${anime.type}
             </p>
             <h1 class="font-bebas text-7xl">${title}</h1>
@@ -75,45 +75,75 @@ fetch("/assets/data/top-10-animes.json")
 
     for (let i = 0; i < animesData10.length; i++) {
       bestAnimes.innerHTML += `<a class="block">
-  <div title="${
-    animesData10[i].title
-  }" class="group relative w-[200px] h-[300px] transition-all duration-300 rounded-lg overflow-hidden">
-    <div class="w-full h-full relative rounded-md">
-      <!-- Image -->
-      <img
-        class="w-full h-full object-cover aspect-[2/3] transition-all duration-300 group-hover:scale-105 group-hover:brightness-[40%]"
-        src="assets/images/animes/${animesData10[i].image}"
-        alt="${animesData10[i].title}"
-      />
+<div title="${
+        animesData10[i].title
+      }" class="group relative w-[200px] h-[300px] transition-all duration-300 rounded-lg overflow-hidden">
+<div class="w-full h-full relative rounded-md">
+  <!-- Image -->
+  <img
+    class="w-full h-full object-cover aspect-[2/3] transition-all duration-300 group-hover:scale-105 group-hover:brightness-[40%]"
+    src="assets/images/animes/${animesData10[i].image}"
+    alt="${animesData10[i].title}"
+  />
 
-      <!-- Dark Gradient Overlay -->
-      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+  <!-- Dark Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
 
-      <!-- Anime Title (Fixed Alignment) -->
-      <h1 class="absolute bottom-3 left-1/2 -translate-x-1/2 text-ivory text-sm font-semibold w-[90%] truncate text-center capitalize">
-        ${animesData10[i].title.replaceAll("-", " ")}
-      </h1>
+  <!-- Anime Title -->
+  <h1 class="absolute bottom-3 left-1/2 -translate-x-1/2 text-ivory text-sm font-semibold w-[90%] truncate text-center capitalize">
+    ${animesData10[i].title.replaceAll("-", " ")}
+  </h1>
 
-      <!-- Ranking Number (Fixed Positioning) -->
-      <h1
-        class="absolute top-2 left-3 font-montserrat font-extrabold text-3xl text-ivory"
-        style="text-shadow: 2px 2px 4px rgba(30, 30, 30, 0.8)"
-      >
-        ${i + 1}
-      </h1>
+  <!-- Ranking Number -->
+  <h1 class="absolute top-2 left-3 font-montserrat font-extrabold text-3xl text-ivory" style="text-shadow: 2px 2px 4px rgba(30, 30, 30, 0.8)">
+    ${i + 1}
+  </h1>
 
-      <!-- Play Button (Fixed Centering) -->
-      <button
-        class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-charcoal/50 text-ivory text-xl w-14 h-14 flex items-center justify-center rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-      >
-        <i class="fa-solid fa-play"></i>
-      </button>
-    </div>
-  </div>
-</a>
-
-`;
+  <!-- Play Button -->
+  <button class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-charcoal/50 text-ivory text-xl w-14 h-14 flex items-center justify-center rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+    <i class="fa-solid fa-play"></i>
+  </button>
+</div>
+</div>
+</a>`;
     }
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    bestAnimes.addEventListener("mousedown", (e) => {
+      isDown = true;
+      startX = e.pageX;
+      scrollLeft = bestAnimes.scrollLeft;
+      bestAnimes.style.cursor = "grabbing";
+    });
+
+    bestAnimes.addEventListener("mouseup", () => {
+      isDown = false;
+      bestAnimes.style.cursor = "grab";
+    });
+
+    bestAnimes.addEventListener("mouseleave", () => {
+      isDown = false;
+      bestAnimes.style.cursor = "grab";
+    });
+
+    bestAnimes.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+
+      let x = e.pageX;
+      let walk = (x - startX) * 2;
+
+      bestAnimes.scrollLeft = scrollLeft - walk;
+
+      if (walk > 10) {
+        console.log("Scrolling Right");
+      } else if (walk < -10) {
+        console.log("Scrolling Left");
+      }
+    });
   });
 
 // ============================= Load 'Genres ' Data =================

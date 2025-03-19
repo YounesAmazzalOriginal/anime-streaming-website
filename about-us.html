@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <title>AnimeVerse | Explore Top Anime & Genres</title> -->
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Javascript -->
+    <script src="assets/scripts/main.js" defer></script>
+    <script src="assets/scripts/search.js" defer></script>
+    <!-- <script src="assets/scripts/about-us.js" defer></script> -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <style>
+      input[type="checkbox"]:checked::before {
+        content: "\f00c";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      label {
+        user-select: none;
+      }
+      img {
+        pointer-events: none;
+      }
+      * {
+        user-select: none;
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              charcoal: "#1c1c1c",
+              crimson: "#e10600",
+              ivory: "#f5f5f5",
+              gold: "#ffd700",
+            },
+            fontFamily: {
+              montserrat: ["Montserrat", "sans-serif"],
+              jost: ["Jost", "sans-serif"],
+              bebas: ["Bebas Neue", "cursive"],
+            },
+            animation: {
+              screenMove: "screenMove 8s alternate infinite ease-in",
+            },
+            keyframes: {
+              screenMove: {
+                "0%": { top: "0%" },
+                "100%": { top: "-100%" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-black text-ivory selection:bg-crimson font-jost">
+    <!-- ================ nav ================ -->
+    <nav
+      class="flex items-center justify-evenly h-[70px] hidden sm:hidden md:hidden lg:hidden xl:flex"
+    >
+      <a href="index.html" class="w-40">
+        <img src="assets/images/nav-logo.png" alt="" />
+      </a>
+      <ul class="capitalize flex gap-20">
+        <li class="hover:text-crimson transition-all duration-500">
+          <a href="index.html">home</a>
+        </li>
+        <li class="hover:text-crimson transition-all duration-500">
+          <a href="discovery.html">discovery</a>
+        </li>
+        <li class="hover:text-crimson transition-all duration-500">
+          <a href="about-us.html">about us</a>
+        </li>
+      </ul>
+      <div class="flex items-center gap-10">
+        <div
+          class="relative flex items-center pl-3 bg-white/20 w-60 h-7 rounded"
+        >
+          <div class="flex items-center gap-2">
+            <img
+              class="w-2.5 opacity-50"
+              src="assets/icons/search.png"
+              alt=""
+            />
+            <input
+              class="bg-transparent placeholder:text-ivory placeholder:opacity-50 text-[13px] outline-0"
+              type="text"
+              name=""
+              id="search-input"
+              placeholder="Search"
+            />
+          </div>
+          <!-- Search Results -->
+          <div
+            id="search-result-container"
+            class="hidden z-[200] absolute top-10 -left-10 bg-black/90 p-2 h-[400px] w-[310px] overflow-x-hidden flex flex-col gap-2 rounded-lg"
+            style="scrollbar-width: thin; scrollbar-color: crimson black"
+          >
+            <h1 class="bg-blue-400 text-ivory text-xl">1000</h1>
+            <!--  -->
+          </div>
+        </div>
+        <button id="user-btn" class="p-1">
+          <img class="invert w-4" src="assets/icons/user.png" alt="" />
+        </button>
+      </div>
+    </nav>
+
+    <!-- ================ Login ================ -->
+    <form
+      id="login-form"
+      action=""
+      class="hidden transition-all duration-500 ease-in-out bg-charcoal/90 w-[430px] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[50] p-6 rounded-lg flex flex-col gap-4"
+    >
+      <h1 class="text-2xl font-bold text-center font-montserrat">
+        Welcome back!
+      </h1>
+      <div class="text-start grid">
+        <label
+          for="email"
+          class="uppercase font-semibold text-[11px] opacity-80 mb-1"
+          >email address</label
+        >
+        <input
+          id="email"
+          class="font-light px-3 py-2 outline-0 text-black"
+          type="email"
+          placeholder="name@gmail.com"
+          required
+        />
+      </div>
+      <div class="text-start grid">
+        <label
+          for="password"
+          class="uppercase font-semibold text-[11px] opacity-80 mb-1"
+          >password</label
+        >
+        <input
+          class="font-light px-3 py-2 outline-0 text-black"
+          type="password"
+          id="password"
+          placeholder="password"
+          required
+        />
+      </div>
+      <div class="flex justify-between">
+        <div class="flex items-center gap-2">
+          <input
+            id="rememberme"
+            class="w-[16px] h-[16px] text-[12px] relative appearance-none bg-crimson/70 border border-crimson/50 checked:bg-crimson rounded-sm"
+            type="checkbox"
+          />
+
+          <label class="text-sm cursor-pointer" for="rememberme"
+            >Remember Me</label
+          >
+        </div>
+        <a href="" class="text-sm text-crimson underline">Forgot password?</a>
+      </div>
+      <button
+        class="bg-crimson px-3 py-2 w-full rounded text-center mt-4"
+        type="submit"
+      >
+        Login
+      </button>
+      <p class="text-center py-1">
+        Don't have an account?
+        <a
+          id="register-link"
+          class="text-sm text-crimson underline cursor-pointer"
+          >Register</a
+        >
+      </p>
+      <button>
+        <img
+          onclick="closeForm(this)"
+          class="invert w-8 absolute -top-3 -right-3"
+          src="assets/icons/icons8-macos-close-100.png"
+          alt=""
+        />
+      </button>
+    </form>
+
+    <!-- ================ Sign Up ================ -->
+    <form
+      id="signup-form"
+      action=""
+      class="hidden bg-charcoal/90 w-[430px] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[50] p-6 rounded-lg flex flex-col gap-4"
+    >
+      <h1 class="text-2xl font-bold text-center font-montserrat">
+        Create an Account
+      </h1>
+      <div class="text-start grid">
+        <label
+          for="name-su"
+          class="uppercase font-semibold text-[11px] opacity-80 mb-1"
+          >your name</label
+        >
+        <input
+          id="name-su"
+          class="font-light px-3 py-2 outline-0 text-black"
+          type="text"
+          placeholder="Name"
+        />
+      </div>
+      <div class="text-start grid">
+        <label
+          for="email-su"
+          class="uppercase font-semibold text-[11px] opacity-80 mb-1"
+          >email</label
+        >
+        <input
+          class="font-light px-3 py-2 outline-0 text-black"
+          type="text"
+          id="email-su"
+          placeholder="name@gmail.com"
+        />
+      </div>
+      <div class="text-start grid">
+        <label
+          for="password-su"
+          class="uppercase font-semibold text-[11px] opacity-80 mb-1"
+          >password</label
+        >
+        <input
+          class="font-light px-3 py-2 outline-0 text-black"
+          type="password"
+          id="password-su"
+          placeholder="Password"
+        />
+      </div>
+      <div class="text-start grid">
+        <label
+          for="confirm-password-su"
+          class="uppercase font-semibold text-[11px] opacity-80 mb-1"
+          >password</label
+        >
+        <input
+          class="font-light px-3 py-2 outline-0 text-black"
+          type="password"
+          id="confirm-password-su"
+          placeholder="Confirm Password"
+        />
+      </div>
+      <button
+        class="bg-crimson px-3 py-2 w-full rounded text-center mt-4"
+        type="submit"
+      >
+        Sign Up
+      </button>
+      <p class="text-center py-1">
+        Have an account?
+        <a id="login-link" class="text-sm text-crimson underline cursor-pointer"
+          >Login</a
+        >
+      </p>
+      <button>
+        <img
+          onclick="closeForm(this)"
+          class="invert w-8 absolute -top-3 -right-3"
+          src="assets/icons/icons8-macos-close-100.png"
+          alt=""
+        />
+      </button>
+    </form>
+
+    <div class="flex flex-col mt-10 gap-4">
+      <div
+        class="w-[90%] mx-auto bg-black p-10 rounded-lg relative overflow-hidden group cursor-pointer"
+      >
+        <img
+          class="absolute top-0 inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-all"
+          src="assets/images/about-anisenpai-image-section.jpg"
+          alt=""
+        />
+        <div class="flex items-center gap-5">
+          <div class="bg-crimson w-2 h-11 z-10"></div>
+          <h1 class="capitalize text-3xl font-bold z-10">About AniSenpai</h1>
+        </div>
+        <p class="mt-7 opacity-60">
+          Welcome to AniSenpai, your ultimate gateway to the world of anime!
+          Whether you're a lifelong otaku or just beginning your anime journey,
+          we've created a space where you can explore, discover, and enjoy the
+          best anime series effortlessly.
+        </p>
+      </div>
+      <div
+        class="w-[90%] mx-auto bg-black p-10 rounded-lg relative overflow-hidden group cursor-pointer text-end"
+      >
+        <img
+          class="absolute top-0 inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-all"
+          src="assets/images/what-is-anisenpai-image-section.jpeg"
+          alt=""
+        />
+        <div class="flex items-center gap-5 justify-end">
+          <h1 class="capitalize text-3xl font-bold z-10">What is AniSenpai?</h1>
+          <div class="bg-crimson w-2 h-11 z-10"></div>
+        </div>
+        <p class="mt-7 opacity-60">
+          AniSenpai is a dedicated anime platform that helps you find and
+          explore anime based on genres, release years, and status. We aim to
+          make anime discovery easier, with a smooth interface, powerful search
+          filters, and a growing collection of shows.
+        </p>
+      </div>
+      <div
+        class="w-[90%] mx-auto bg-black p-10 rounded-lg relative overflow-hidden group cursor-pointer"
+      >
+        <img
+          class="absolute top-0 inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-all"
+          src="assets/images/why-anisenpai-image-section.jpg"
+          alt=""
+        />
+        <div class="flex items-center gap-5">
+          <div class="bg-crimson w-2 h-11 z-10"></div>
+          <h1 class="capitalize text-3xl font-bold z-10">Why AniSenpai?</h1>
+        </div>
+        <p class="mt-7 opacity-60">
+          ✔ Organized Anime Library – Browse anime by categories, genres, and
+          popularity. <br />
+          ✔ Fast & Smooth Search – Quickly find your favorite anime with
+          real-time search results. <br />
+          ✔ Anime Details at a Glance – Get info like release date, status, and
+          extra notes. <br />
+          ✔ User-Friendly Design – Clean, dark-themed UI for the best browsing
+          experience. <br />
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="hidden sm:hidden md:hidden lg:hidden xl:flex bg-charcoal/50 mt-10 flex justify-evenly py-3"
+    >
+      <p class="font-montserrat text-[14px] opacity-70">
+        Code & Design by
+        <span title="This website was coded and designed by Younes AMAZZAL."
+          >Younes AMAZZAL</span
+        >
+        | Connect with me :
+      </p>
+      <div class="flex items-center gap-4 opacity-70">
+        <a
+          class="text-[14px]"
+          title="My Whatsapp"
+          href="https://wa.me/212635303129"
+        >
+          <button>
+            <i
+              class="fa-brands fa-whatsapp hover:text-crimson transition-all"
+            ></i>
+          </button>
+        </a>
+        <a
+          class="text-[14px]"
+          title="My Linkedin"
+          href="https://www.linkedin.com/in/younes-amazzal-3152042b0/"
+        >
+          <button>
+            <i
+              class="fa-brands fa-linkedin-in hover:text-crimson transition-all"
+            ></i>
+          </button>
+        </a>
+        <a
+          class="text-[14px]"
+          title="My Instagram"
+          href="https://www.instagram.com/amzprod2"
+        >
+          <button>
+            <i
+              class="fa-brands fa-instagram hover:text-crimson transition-all"
+            ></i>
+          </button>
+        </a>
+        <a
+          class="text-[14px]"
+          title="My Github"
+          href="https://github.com/YounesAmazzalOriginal"
+        >
+          <button>
+            <i
+              class="fa-brands fa-github hover:text-crimson transition-all"
+            ></i>
+          </button>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
