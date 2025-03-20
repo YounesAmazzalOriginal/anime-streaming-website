@@ -21,6 +21,7 @@ fetch("/assets/data/animes.json")
       let button = document.createElement("button");
       button.textContent = genre;
       button.type = "button";
+      button.id = "genreButton";
       button.style.setProperty("user-select", "none");
       button.classList.add(
         "genre-button",
@@ -40,6 +41,7 @@ fetch("/assets/data/animes.json")
       let button = document.createElement("button");
       button.textContent = date;
       button.type = "button";
+      button.id = "idButton";
       button.style.setProperty("user-select", "none");
       button.classList.add(
         "date-button",
@@ -58,6 +60,8 @@ fetch("/assets/data/animes.json")
     let filterSelected = { genres: [], release_date: "" };
 
     function genreBtns(target) {
+      target.classList.add("active");
+
       const genre = target.textContent;
 
       if (filterSelected.genres.includes(genre)) {
@@ -76,6 +80,8 @@ fetch("/assets/data/animes.json")
     }
 
     function dateBtns(target) {
+      target.classList.add("active");
+
       document.querySelectorAll(".date-button").forEach((btn) => {
         btn.classList.remove("text-black/80", "bg-white/70");
       });
@@ -104,7 +110,7 @@ fetch("/assets/data/animes.json")
       let filteredAnimes = animes.filter((anime) => {
         const animeGenres = anime.type.split(", ");
         const genreMatch =
-          filterSelected.genres.length === 0 || // No genre selected = match all
+          filterSelected.genres.length === 0 ||
           filterSelected.genres.some((selectedGenre) =>
             animeGenres.includes(selectedGenre)
           );
@@ -116,7 +122,59 @@ fetch("/assets/data/animes.json")
         return genreMatch && dateMatch;
       });
 
-      console.log("Filtered Animes:", filteredAnimes);
+      // console.log("Filtered Animes:", filteredAnimes);
+
+      var filtredAnimes = document.getElementById("filtred-animes");
+      var resultsCount = document.getElementById("results-count");
+
+      // **Clear previous animes before adding new ones**
+      filtredAnimes.innerHTML = "";
+
+      function findMatchedResults() {
+        filtredAnimes.innerHTML = ""; // Clear previous results
+
+        for (let i = 0; i < filteredAnimes.length; i++) {
+          filtredAnimes.innerHTML += `<a class="block" href="video-player.html">
+            <div
+              title="${filteredAnimes[i].title}"
+              class="group relative w-[200px] h-[300px] transition-all duration-300 rounded-lg overflow-hidden"
+            >
+              <div class="w-full h-full relative rounded-md">
+                <!-- Image -->
+                <img
+                  class="w-full h-full object-cover aspect-[2/3] transition-all duration-300 group-hover:scale-105 group-hover:brightness-[40%]"
+                  src="assets/images/animes/${filteredAnimes[i].image}"
+                  alt="${filteredAnimes[i].title}"
+                />
+        
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+        
+                <h1 class="absolute bottom-3 left-1/2 -translate-x-1/2 text-ivory text-sm font-semibold w-[90%] truncate text-center capitalize">
+                  ${filteredAnimes[i].title}
+                </h1>
+              </div>
+            </div>
+          </a>`;
+        }
+      }
+
+      document.querySelectorAll("#idButton ,#genreButton").forEach((btn) => {
+        if (!btn.classList.contains("active")) {
+          console.log(`btn not active`);
+          return;
+        }
+
+        console.log(`btn active`);
+        findMatchedResults();
+
+        // Scroll Smooth to Results
+        document.querySelector("#filtred-animes").scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+
+        resultsCount.textContent = `${filteredAnimes.length} results found`;
+      });
     }
 
     document

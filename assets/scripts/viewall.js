@@ -3,7 +3,7 @@ var section = document.querySelector("section");
 var genreMatched = JSON.parse(localStorage.getItem("genreMatched"));
 
 genreMatched.forEach((genreMatched) => {
-  section.innerHTML += `<a id="anime-card" href="anime-details.html" class="block">
+  section.innerHTML += `<a id="anime-card" href="video-player.html" class="block">
         <div
           title="${genreMatched.title}"
           class="group relative w-[200px] h-[300px] transition-all duration-300 rounded-lg overflow-hidden"

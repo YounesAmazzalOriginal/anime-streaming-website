@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <title>AnimeVerse | Explore Top Anime & Genres</title> -->
+    <title>Discover New Anime | AniSenpai</title>
 
     <!-- Google Fonts -->
     <link
@@ -27,7 +27,7 @@
     <script src="assets/scripts/forms.js" defer></script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/favicon2.png" />
 
     <style>
       input[type="checkbox"]:checked::before {
@@ -96,7 +96,7 @@
       </ul>
       <div class="flex items-center gap-10">
         <div
-          class="relative flex items-center pl-3 bg-ivory/20 w-60 h-7 rounded"
+          class="relative flex items-center pl-3 bg-white/20 w-60 h-7 rounded border border-transparent focus-within:border-white"
         >
           <div class="flex items-center gap-2">
             <img
@@ -193,13 +193,11 @@
           >Register</a
         >
       </p>
-      <button>
-        <img
-          onclick="closeForm(this)"
-          class="invert w-8 absolute -top-3 -right-3"
-          src="assets/icons/icons8-macos-close-100.png"
-          alt=""
-        />
+      <button
+        type="button"
+        class="close-form invert w-8 absolute -top-3 -right-3"
+      >
+        <img class="" src="assets/icons/icons8-macos-close-100.png" alt="" />
       </button>
     </form>
 
@@ -276,16 +274,15 @@
           >Login</a
         >
       </p>
-      <button>
-        <img
-          onclick="closeForm(this)"
-          class="invert w-8 absolute -top-3 -right-3"
-          src="assets/icons/icons8-macos-close-100.png"
-          alt=""
-        />
+      <button
+        type="button"
+        class="close-form invert w-8 absolute -top-3 -right-3"
+      >
+        <img class="" src="assets/icons/icons8-macos-close-100.png" alt="" />
       </button>
     </form>
 
+    <!-- Filter Container -->
     <section class="w-[90%] mx-auto mt-20">
       <div class="flex items-center gap-5">
         <div class="bg-crimson w-2 h-11"></div>
@@ -324,5 +321,71 @@
         </button>
       </form>
     </section>
+
+    <!-- Filtred -->
+    <section class="w-[90%] mx-auto mt-20 mb-20 grid">
+      <p id="results-count" class="text-center mb-5 text-lg"></p>
+      <div id="filtred-animes" class="flex flex-wrap justify-center gap-4">
+        <!--  -->
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="hidden sm:hidden md:hidden lg:hidden xl:flex bg-charcoal/50 mt-10 flex justify-evenly items-center h-[55px]"
+    >
+      <p class="font-montserrat text-[14px] opacity-70">
+        Code & Design by
+        <span title="This website was coded and designed by Younes AMAZZAL."
+          >Younes AMAZZAL</span
+        >
+        | Connect with me :
+      </p>
+      <div class="flex items-center gap-4 opacity-70">
+        <a
+          class="text-[14px]"
+          title="My Whatsapp"
+          href="https://wa.me/212635303129"
+        >
+          <button>
+            <i
+              class="fa-brands fa-whatsapp hover:text-crimson transition-all"
+            ></i>
+          </button>
+        </a>
+        <a
+          class="text-[14px]"
+          title="My Linkedin"
+          href="https://www.linkedin.com/in/younes-amazzal-3152042b0/"
+        >
+          <button>
+            <i
+              class="fa-brands fa-linkedin-in hover:text-crimson transition-all"
+            ></i>
+          </button>
+        </a>
+        <a
+          class="text-[14px]"
+          title="My Instagram"
+          href="https://www.instagram.com/amzprod2"
+        >
+          <button>
+            <i
+              class="fa-brands fa-instagram hover:text-crimson transition-all"
+            ></i>
+          </button>
+        </a>
+        <a
+          class="text-[14px]"
+          title="My Github"
+          href="https://github.com/YounesAmazzalOriginal"
+        >
+          <button>
+            <i
+              class="fa-brands fa-github hover:text-crimson transition-all"
+            ></i>
+          </button>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

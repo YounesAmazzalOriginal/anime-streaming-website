@@ -11,6 +11,11 @@ velocityInput.addEventListener("input", () => {
 velocityIcon.addEventListener("click", () => {
   velocityIconFunc();
 });
+document.addEventListener("keydown", (event) => {
+  if (event.key == "f") {
+    fullScreen();
+  }
+});
 //
 
 function velocityFunc() {
@@ -56,6 +61,8 @@ function velocityIconFunc() {
 
     velocityInput.value = 50;
   }
+
+  inputRange(velocityInput);
 }
 
 // style progress inputs

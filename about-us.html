@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <title>AnimeVerse | Explore Top Anime & Genres</title> -->
+    <title>About AniSenpai - Our Mission & Story</title>
 
     <!-- Google Fonts -->
     <link
@@ -24,10 +24,10 @@
     <!-- Javascript -->
     <script src="assets/scripts/main.js" defer></script>
     <script src="assets/scripts/search.js" defer></script>
-    <!-- <script src="assets/scripts/about-us.js" defer></script> -->
+    <script src="assets/scripts/forms.js" defer></script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/favicon2.png" />
 
     <style>
       input[type="checkbox"]:checked::before {
@@ -101,7 +101,7 @@
       </ul>
       <div class="flex items-center gap-10">
         <div
-          class="relative flex items-center pl-3 bg-white/20 w-60 h-7 rounded"
+          class="relative flex items-center pl-3 bg-white/20 w-60 h-7 rounded border border-transparent focus-within:border-white"
         >
           <div class="flex items-center gap-2">
             <img
@@ -198,13 +198,11 @@
           >Register</a
         >
       </p>
-      <button>
-        <img
-          onclick="closeForm(this)"
-          class="invert w-8 absolute -top-3 -right-3"
-          src="assets/icons/icons8-macos-close-100.png"
-          alt=""
-        />
+      <button
+        type="button"
+        class="close-form invert w-8 absolute -top-3 -right-3"
+      >
+        <img class="" src="assets/icons/icons8-macos-close-100.png" alt="" />
       </button>
     </form>
 
@@ -281,13 +279,11 @@
           >Login</a
         >
       </p>
-      <button>
-        <img
-          onclick="closeForm(this)"
-          class="invert w-8 absolute -top-3 -right-3"
-          src="assets/icons/icons8-macos-close-100.png"
-          alt=""
-        />
+      <button
+        type="button"
+        class="close-form invert w-8 absolute -top-3 -right-3"
+      >
+        <img class="" src="assets/icons/icons8-macos-close-100.png" alt="" />
       </button>
     </form>
 
@@ -357,7 +353,7 @@
 
     <!-- Footer -->
     <footer
-      class="hidden sm:hidden md:hidden lg:hidden xl:flex bg-charcoal/50 mt-10 flex justify-evenly py-3"
+      class="hidden sm:hidden md:hidden lg:hidden xl:flex bg-charcoal/50 mt-10 flex justify-evenly items-center h-[55px]"
     >
       <p class="font-montserrat text-[14px] opacity-70">
         Code & Design by

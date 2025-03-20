@@ -17,29 +17,45 @@ fetch("/assets/data/header-animes.json")
             hover:scale-105 transition-all duration-700"
           />
           <div class="absolute bottom-0 left-0 m-14 grid gap-4 z-10">
-            <p class="bg-bg-ivory text-crimson text-[12px] w-fit px-3 h-6 flex justify-center items-center capitalize">
+            <p class="bg-ivory text-crimson text-[12px] w-fit px-3 h-6 flex justify-center items-center capitalize">
               ${anime.type}
             </p>
             <h1 class="font-bebas text-7xl">${title}</h1>
             <p class="w-2/3 opacity-80 font-[300] text-[15px]">
               ${anime.description}
             </p>
-            <button class="bg-crimson w-40 h-10 rounded-full flex items-center justify-evenly border border-transparent hover:bg-transparent hover:border-crimson hover:text-crimson transition-all duration-450 hover:scale-95">
-              <i class="fa-solid fa-play text-sm"></i>
-              <p class="text-sm capitalize">watch now</p>
-            </button>
+            <a href="video-player.html">
+              <button
+              class="bg-crimson w-40 h-10 rounded-full flex items-center justify-evenly border border-transparent hover:bg-transparent hover:border-crimson hover:text-crimson transition-all duration-450 hover:scale-95"
+            >
+                <i class="fa-solid fa-play text-sm"></i>
+                <p class="text-sm capitalize">watch now</p>
+              </button>
+            </a>  
           </div>
         </div>`;
     });
   })
   .catch((error) => console.error("Error fetching anime data:", error));
 
-document.getElementById("rightSwip").addEventListener("click", () => {
+document.getElementById("rightSwip").addEventListener("click", function () {
   heroSwip(1);
+
+  this.style.pointerEvents = "none";
+  setTimeout(() => {
+    this.style.pointerEvents = "auto";
+  }, 1000);
 });
-document.getElementById("leftSwip").addEventListener("click", () => {
+
+document.getElementById("leftSwip").addEventListener("click", function () {
   heroSwip(-1);
+
+  this.style.pointerEvents = "none";
+  setTimeout(() => {
+    this.style.pointerEvents = "auto";
+  }, 1000);
 });
+
 function heroSwip(swipDirection) {
   var hero = document.getElementById("hero");
 
@@ -74,7 +90,7 @@ fetch("/assets/data/top-10-animes.json")
     var bestAnimes = document.getElementById("best-animes-container");
 
     for (let i = 0; i < animesData10.length; i++) {
-      bestAnimes.innerHTML += `<a class="block">
+      bestAnimes.innerHTML += `<a class="block" href="video-player.html">
 <div title="${
         animesData10[i].title
       }" class="group relative w-[200px] h-[300px] transition-all duration-300 rounded-lg overflow-hidden">
@@ -99,10 +115,6 @@ fetch("/assets/data/top-10-animes.json")
     ${i + 1}
   </h1>
 
-  <!-- Play Button -->
-  <button class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-charcoal/50 text-ivory text-xl w-14 h-14 flex items-center justify-center rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-    <i class="fa-solid fa-play"></i>
-  </button>
 </div>
 </div>
 </a>`;

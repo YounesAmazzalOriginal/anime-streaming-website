@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <title>AnimeVerse | Explore Top Anime & Genres</title> -->
+    <title>AniSenpai - Your Ultimate Anime Hub</title>
 
     <!-- Google Fonts -->
     <link
@@ -27,7 +27,7 @@
     <script src="assets/scripts/forms.js" defer></script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/favicon2.png" />
 
     <style>
       input[type="checkbox"]:checked::before {
@@ -68,6 +68,7 @@
             },
             animation: {
               screenMove: "screenMove 8s alternate infinite ease-in",
+              slowSpin: "spin 1s linear infinite",
             },
             keyframes: {
               screenMove: {
@@ -81,8 +82,18 @@
     </script>
   </head>
   <body class="bg-black text-ivory selection:bg-crimson font-jost">
+    <!-- ================ Loading Circle ================ -->
+    <!-- <section
+      class="bg-black/60 w-screen h-screen fixed z-[400] flex justify-center items-center"
+    >
+      <div
+        class="w-14 h-14 rounded-full border-4 border-white/70 border-t-crimson animate-slowSpin"
+      ></div>
+    </section> -->
+
     <!-- ================ nav ================ -->
     <nav
+      rotate-45
       class="flex items-center justify-evenly h-[70px] hidden sm:hidden md:hidden lg:hidden xl:flex"
     >
       <a href="index.html" class="w-40">
@@ -101,7 +112,7 @@
       </ul>
       <div class="flex items-center gap-10">
         <div
-          class="relative flex items-center pl-3 bg-white/20 w-60 h-7 rounded"
+          class="relative flex items-center pl-3 bg-white/20 w-60 h-7 rounded border border-transparent focus-within:border-white"
         >
           <div class="flex items-center gap-2">
             <img
@@ -198,13 +209,11 @@
           >Register</a
         >
       </p>
-      <button>
-        <img
-          onclick="closeForm(this)"
-          class="invert w-8 absolute -top-3 -right-3"
-          src="assets/icons/icons8-macos-close-100.png"
-          alt=""
-        />
+      <button
+        type="button"
+        class="close-form invert w-8 absolute -top-3 -right-3"
+      >
+        <img class="" src="assets/icons/icons8-macos-close-100.png" alt="" />
       </button>
     </form>
 
@@ -281,13 +290,11 @@
           >Login</a
         >
       </p>
-      <button>
-        <img
-          onclick="closeForm(this)"
-          class="invert w-8 absolute -top-3 -right-3"
-          src="assets/icons/icons8-macos-close-100.png"
-          alt=""
-        />
+      <button
+        type="button"
+        class="close-form invert w-8 absolute -top-3 -right-3"
+      >
+        <img class="" src="assets/icons/icons8-macos-close-100.png" alt="" />
       </button>
     </form>
 
@@ -328,7 +335,7 @@
           <div class="bg-crimson w-2 h-11"></div>
           <h1 class="capitalize text-3xl font-bold">top 10 animes</h1>
         </div>
-        <button
+        <!-- <button
           onclick="viewwAll(this)"
           class="flex items-center gap-2 opacity-60 hover:opacity-80 transition cursor-pointer"
         >
@@ -338,7 +345,8 @@
             src="assets/icons/left-arrow.png"
             alt=""
           />
-        </button>
+        </button> -->
+        <i class="fa-solid fa-hand-back-fist opacity-50"></i>
       </div>
 
       <div
@@ -417,7 +425,7 @@
 
     <!-- Footer -->
     <footer
-      class="hidden sm:hidden md:hidden lg:hidden xl:flex bg-charcoal/50 mt-10 flex justify-evenly py-3"
+      class="hidden sm:hidden md:hidden lg:hidden xl:flex bg-charcoal/50 mt-10 flex justify-evenly items-center h-[55px]"
     >
       <p class="font-montserrat text-[14px] opacity-70">
         Code & Design by
@@ -498,10 +506,10 @@
           />
         </div>
       </div>
-      <h1 class="text-3xl text-center font-[600]">
+      <h1 class="text-3xl text-center font-[600] w-[80%] white-space-wrap">
         Enjoy the Best Anime Experience!
       </h1>
-      <p class="text-center opacity-50 text-xl w-[90%]">
+      <p class="text-center opacity-70 text-xl w-[90%]">
         For the best experience, use our mobile app. If you're on a desktop,
         visit our website.
       </p>

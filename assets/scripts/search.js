@@ -26,7 +26,7 @@ fetch("/assets/data/animes.json")
             .toLowerCase()
             .includes(searchInput.value.toLowerCase())
         ) {
-          var singleAnime = `<a >
+          var singleAnime = `<a href="video-player.html">
               <div class="bg-black/60 w-full p-2 flex gap-3 relative cursor-pointer">
                 <div class="relative overflow-hidden min-w-16 min-h-16 max-w-16 max-h-16">
                   <img class="z-[1] w-full h-full object-contain absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"

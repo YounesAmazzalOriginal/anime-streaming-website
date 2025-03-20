@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <title>AnimeVerse | Explore Top Anime & Genres</title> -->
+    <title>Watch Anime Online | AniSenpai</title>
 
     <!-- Google Fonts -->
     <link
@@ -27,7 +27,7 @@
     <script src="assets/scripts/forms.js" defer></script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/favicon2.png" />
 
     <style>
       input[type="checkbox"]:checked::before {
@@ -104,7 +104,7 @@
       </ul>
       <div class="flex items-center gap-10">
         <div
-          class="relative flex items-center pl-3 bg-ivory/20 w-60 h-7 rounded"
+          class="relative flex items-center pl-3 bg-white/20 w-60 h-7 rounded border border-transparent focus-within:border-white"
         >
           <div class="flex items-center gap-2">
             <img
@@ -201,13 +201,11 @@
           >Register</a
         >
       </p>
-      <button>
-        <img
-          onclick="closeForm(this)"
-          class="invert w-8 absolute -top-3 -right-3"
-          src="assets/icons/icons8-macos-close-100.png"
-          alt=""
-        />
+      <button
+        type="button"
+        class="close-form invert w-8 absolute -top-3 -right-3"
+      >
+        <img class="" src="assets/icons/icons8-macos-close-100.png" alt="" />
       </button>
     </form>
 
@@ -284,18 +282,15 @@
           >Login</a
         >
       </p>
-      <button>
-        <img
-          onclick="closeForm(this)"
-          class="invert w-8 absolute -top-3 -right-3"
-          src="assets/icons/icons8-macos-close-100.png"
-          alt=""
-        />
+      <button
+        type="button"
+        class="close-form invert w-8 absolute -top-3 -right-3"
+      >
+        <img class="" src="assets/icons/icons8-macos-close-100.png" alt="" />
       </button>
     </form>
 
     <!-- Video Player -->
-
     <div
       id="video-player"
       class="bg-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[28.125vw] rounded-lg transition-all duration-700"

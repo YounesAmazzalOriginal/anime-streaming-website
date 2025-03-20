@@ -48,8 +48,14 @@ document.getElementById("login-link").addEventListener("click", () => {
   signupForm.classList.add("hidden");
 });
 
+// Close Forms
+
 function closeForm(target) {
-  alert("closeForm");
-  var closeFormBtn = target.closest("form");
-  closeFormBtn.classList.add("hidden");
+  var form = target.closest("form");
+  form.classList.add("hidden");
 }
+document.querySelectorAll(".close-form").forEach((closeBtn) => {
+  closeBtn.addEventListener("click", function () {
+    closeForm(this);
+  });
+});
