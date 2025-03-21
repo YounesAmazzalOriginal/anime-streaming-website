@@ -1,5 +1,7 @@
 // ================= Load 'Trending Anime' Data =================
-fetch("https://younesamazzaloriginal.github.io/anime-streaming-website")
+fetch(
+  "https://younesamazzaloriginal.github.io/anime-streaming-website/assets/data/top-10-animes.json"
+)
   .then((res) => res.json())
   .then((data10) => {
     let hero = document.getElementById("hero");
@@ -92,7 +94,7 @@ fetch(
     var bestAnimes = document.getElementById("best-animes-container");
 
     for (let i = 0; i < animesData10.length; i++) {
-      bestAnimes.innerHTML += `<a class="block" href="video-player.html">
+      bestAnimes.innerHTML += `<a class="block">
 <div title="${
         animesData10[i].title
       }" class="group relative w-[200px] h-[300px] transition-all duration-300 rounded-lg overflow-hidden">
