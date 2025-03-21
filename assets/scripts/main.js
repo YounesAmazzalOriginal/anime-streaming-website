@@ -1,5 +1,7 @@
 // ================= Load 'Trending Anime' Data =================
-fetch("/assets/data/header-animes.json")
+fetch(
+  "https://younesamazzaloriginal.github.io/anime-streaming-websitehttps://younesamazzaloriginal.github.io/anime-streaming-website/assets/data/animes.json"
+)
   .then((res) => res.json())
   .then((data10) => {
     let hero = document.getElementById("hero");
@@ -84,7 +86,9 @@ document.querySelectorAll(".SwipBtn").forEach((swipBtn) => {
 });
 
 // ============================= Load 'Top 10 Anime' Data =================
-fetch("/assets/data/top-10-animes.json")
+fetch(
+  "https://younesamazzaloriginal.github.io/anime-streaming-website/assets/data/top-10-animes.json"
+)
   .then((res) => res.json())
   .then((animesData10) => {
     var bestAnimes = document.getElementById("best-animes-container");
@@ -159,7 +163,9 @@ fetch("/assets/data/top-10-animes.json")
   });
 
 // ============================= Load 'Genres ' Data =================
-fetch("/assets/data/animes.json")
+fetch(
+  "https://younesamazzaloriginal.github.io/anime-streaming-website/assets/data/animes.json"
+)
   .then((res) => res.json())
   .then((animes) => {
     // Genres
