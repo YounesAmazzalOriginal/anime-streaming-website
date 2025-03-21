@@ -1,6 +1,6 @@
 // ================= Load 'Trending Anime' Data =================
 fetch(
-  "https://younesamazzaloriginal.github.io/anime-streaming-website/assets/data/top-10-animes.json"
+  "https://younesamazzaloriginal.github.io/anime-streaming-website/assets/data/header-animes.json"
 )
   .then((res) => res.json())
   .then((data10) => {
