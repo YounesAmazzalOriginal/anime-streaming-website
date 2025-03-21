@@ -1,7 +1,5 @@
 // ================= Load 'Trending Anime' Data =================
-fetch(
-  "https://younesamazzaloriginal.github.io/anime-streaming-websitehttps://younesamazzaloriginal.github.io/anime-streaming-website/assets/data/animes.json"
-)
+fetch("https://younesamazzaloriginal.github.io/anime-streaming-website")
   .then((res) => res.json())
   .then((data10) => {
     let hero = document.getElementById("hero");
