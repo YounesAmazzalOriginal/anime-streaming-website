@@ -1,5 +1,5 @@
 fetch(
-  "https://younesamazzaloriginal.github.io/anime-streaming-websitehttps://younesamazzaloriginal.github.io/anime-streaming-website/assets/data/animes.json"
+  "https://younesamazzaloriginal.github.io/anime-streaming-website/assets/data/animes.json"
 )
   .then((res) => res.json())
   .then((animes) => {
